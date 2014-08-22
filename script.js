@@ -6,7 +6,7 @@ $(function () {
 	});
 	// search box on home page
 	$("#toggle, #toggle2").click(function(){
-		$("#searchbox, #catalogsearch").toggle();
+		$("#searchbox, #catalogsearch").toggle('slow');
   	});
 	// Online Resources more =>
 	$("#toggle3, #toggle4").click(function(){
