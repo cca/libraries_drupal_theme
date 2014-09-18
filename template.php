@@ -164,8 +164,16 @@ function ccatheme_preprocess_page(&$vars) {
  // Titles are ignored on the front page.
   $vars['original_title'] = $vars['title'];
   if ($vars['is_front']) {
-    $vars['title'] = ''; 
+    $vars['title'] = '';
 	}
+
+  // Bootstrap CSS from CDN
+  $vars['head'] .= '<link '. drupal_attributes(array(
+    'rel' => 'stylesheet',
+    'type' => 'text/css',
+    'href' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+  ) ." />\n";
+
   // Remove undesired local task tabs.
   // This first example removes the Users tab from the Search page.
   ccatheme_removetab('Users', $vars);
