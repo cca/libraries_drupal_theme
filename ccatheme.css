@@ -28,8 +28,8 @@
  */
 /* **************** HYPERLINK STYLES **************** */
 
-A:link, 
-a:visited, 
+A:link,
+a:visited,
 dt a  {
     color: #072e99;
     text-decoration: none;
@@ -74,7 +74,7 @@ div.field.field-type-text.field-field-sample-desc {
     padding: 4px;
 	width: 500px;
 }
-	
+
 div.field.field-type-link.field-field-company-url {
 	float: left;
 }
@@ -90,7 +90,7 @@ div[id^='node-'].node.node-mine.node-teaser.node-type-mat-company h2.title {
 }
 
 ul.menu li, div.content, body.sidebar-left.lightbox-processed.admin-menu, body.sidebar-left.lightbox-processed.tableHeader-processed.admin-menu, .admin-menu {
-background: none !important; 
+background: none !important;
 background-color: #FFFFFF !important;
 }
 
@@ -102,64 +102,11 @@ div.logo-floater h1 a:link {
 color: #ffffff;
 }
 
-#nmlsearchcontainer{
-clear: both;
-float: left;
-border-bottom: none;
-width: 600px;
-margin: -2px 5px 10px 5px;
-padding: 10px;
-background: #666;
-border: solid 1px #777;
-}
-#searchbox #nmlsearchcontainer {
-background: #ccc;
-}
-#nmlsearchcontainer select {
-width: 125px;
-font-size: 13px;
-}
-
-#nmlsearchcontainer input[type="text"]{
-width: 400px;
-padding: 3px;
-height: 15px;
-border: 1px solid #ccc;
-font-size: 13px;
-}
-#nmlsearchcontainer input[type="submit"]{
-height: 21px;
-padding: 0px 4px;
-border: 1px solid #777;
-font-size: 12px;
-background: #ccc;
-color: #027;
-}
-#nmlsearchcontainer h3{
-font-weight: normal;
-margin: 0px 0px 5px 2px;
-padding: 0px;
-color: #333;
-font-style: italic;
-font-size: 13px;
-}
-
-#nmlsearchcontainer a{
-border: none;
-color: #027;
-float: none;
-font-size: 11px;
-letter-spacing: 0px;
-line-height: 12px;
-margin: 0px 0px 0px 430px;
-padding: 0px;
-}
-
 /* ********** HEADING / TEXT / LIST STYLES *************** */
 
-/* Establishes default type face for website */ 
+/* Establishes default type face for website */
 a, div, h1, h2, h3, h4, input, li, p, strong, table, textarea, address {
-	font-family: Lucida grande, Verdana, Arial, Helvetica, sans-serif; 
+	font-family: Lucida grande, Verdana, Arial, Helvetica, sans-serif;
 }
 
 
@@ -345,7 +292,7 @@ div[id^='gbooks-link-'].millennium.gbook{
 }
 
 div[id^='gbooks-widget-'].loading{
-	margin-top: 320px;	
+	margin-top: 320px;
 	margin-bottom: 30px;
 }
 
@@ -456,7 +403,7 @@ a[id^='millennium-record-nid-'].millennium.record {
 	top: 495px;
 	left: 17px;
 }
- 
+
 li.millennium_holds.first {
 	display: none;
 }
@@ -760,15 +707,15 @@ border-bottom: none;
   .with-navbar #sidebar-left,
   .with-navbar #sidebar-right
   {
-    margin-top: 75px; 
+    margin-top: 75px;
   }
 
   #navbar-inner
   {
   }
   #titlebanner {
-   clear: both; 
-   padding: 7px 0px; 
+   clear: both;
+   padding: 7px 0px;
   }
   #search-box /* Wrapper for the search form */
   {
@@ -1351,19 +1298,19 @@ width: 960px;
     padding-right: 1em;
     border-bottom: 3px solid #ccc;
   }
-  
+
 /* NICE MENUS */
 #nice-menu-1 li ul li ul li {
         display: none;
 }
 ul.nice-menu,
 ul.nice-menu ul {
-  color: #333333; 
+  color: #333333;
   background: #eadfca;
 }
-ul.nice-menu li, 
+ul.nice-menu li,
 ul.nice-menu-down li ul li {
-  color: #333333; 
+  color: #333333;
   background: #eadfca;
   width: 147px;
   padding-right: 0px;
@@ -1371,14 +1318,14 @@ font-size: 11px;
 }
 
 ul.nice-menu a {
-  color: #333333; 
+  color: #333333;
   background: #eadfca;
   text-decoration: none;
   padding-right: 0px;
   text-align: center;
 }
 ul.nice-menu a:hover {
-  color: #fff; 
+  color: #fff;
   background: #968668;
   text-decoration: none;
   padding-right: 0px;
@@ -1386,7 +1333,7 @@ ul.nice-menu a:hover {
 ul.nice-menu-down li, ul.nice-menu li{
   border: 1px solid #B8A47F;
   padding-right: 0px;
-  
+
 }
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent ul li,
@@ -1459,13 +1406,13 @@ border-top: 1px dashed #666;
 }
 
 #webform-component-your_name{padding:1px 15px;float:left;width:440px;min-height:80px;border-top:1px solid #990000;background:#ccc;clear:both;}#webform-component-your_cca_affiliation,#webform-component-your_program{padding:1px 10px;float:left;width:219px;min-height:80px;border-top:1px solid #990000;background:#ccc;}
-#edit-submit{ 
-border: 1px solid #072e99; 
-background: #ccc; 
+#edit-submit{
+border: 1px solid #072e99;
+background: #ccc;
 color: #072e99;
 padding: 3px;
 }
-#webform-client-form-71 #edit-submit{ 
+#webform-client-form-71 #edit-submit{
 margin: 15px 75px 15px 725px;
 }
 #webform-client-form-179 input#edit-submit{
@@ -1483,9 +1430,9 @@ padding: 0px 20px;
 }
 #webform-component-item-one {
 border: 1px solid #990000;
-background: #ccc; 
+background: #ccc;
 padding: 0px 20px;
-} 
+}
 #webform-client-form-179 input[type="text"]{
 width: 300px;
 }
@@ -1507,7 +1454,7 @@ legend {
 color: #990000;
 }
 #webform-component-item_two, #webform-component-item_three, #webform-component-item_four, #webform-component-item_five, #webform-component-item_six, #webform-component-item_seven, #webform-component-item_eight, #webform-component-item_nine, #webform-component-item_ten  {
-background: #ccc; 
+background: #ccc;
 padding: 0px 20px;
 }
 #webform-component-email_address{padding:1px 15px; float:left; min-width:918px;min-height:80px;border-bottom:1px solid #990000;background:#ccc;}
@@ -1693,7 +1640,7 @@ background: #eee;
 border: solid 1px #777;
 }
 #searchbox #searchcontainer {
-background: #ccc;	
+background: #ccc;
 }
 #searchcontainer select {
 width: 125px;
@@ -1732,7 +1679,7 @@ font-size: 11px;
 letter-spacing: 0px;
 line-height: 12px;
 margin: 0px 0px 0px 430px;
-padding: 0px;	
+padding: 0px;
 }
 #catalogsearch #searchcontainer a {
 background: #EEE;
@@ -1856,10 +1803,10 @@ border-bottom: 1px dotted #777;
 }
 #services ul li strong a{
 font-size: 12px;
-color: #06277F;	
+color: #06277F;
 }
 #services ul li strong a:hover{
-color: #666;	
+color: #666;
 }
 #newbooks #books {
 text-align: center;
@@ -1881,8 +1828,8 @@ border: 0px;
 #home-resources p{
 font-size:18px;
 line-height:30px;
-color:#666;  
-margin-top: 5px; 
+color:#666;
+margin-top: 5px;
 }
 
 #home-resources a{
@@ -1921,14 +1868,14 @@ margin: 0px 10px;
 }
 
 #delicious-posts-ccalibrary h2
-{display: none;} 
+{display: none;}
 #edit-search-block-form-1-wrapper input[type="text"]{
 border: 1px solid #ccc;
 font-size: 13px;
 height: 14px;
 padding: 3px;
 width: 100px;
-margin-top: 2px;	
+margin-top: 2px;
 }
 
 
