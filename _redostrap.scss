@@ -1,0 +1,19 @@
+// OVERRIDING BOOTSTRAP STYLES WITH CCA COLORS
+
+// flat design
+.btn {
+    border-radius: 0;
+}
+
+.btn-default {
+    background-color: lighten($ccaOrange, 33%);
+    border-color: lighten($ccaOrange, 33%);
+    color: $ccaOrange;
+}
+
+.btn-default:hover,
+.btn-default:active {
+    background-color: darken($ccaOrange, 5%);
+    border-color: darken($ccaOrange, 5%);
+    color: darken($ccaOrange, 30%);
+}
