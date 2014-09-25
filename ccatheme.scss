@@ -1301,56 +1301,63 @@ width: 960px;
 
 // NICE MENUS */
 #nice-menu-1 li ul li ul li {
-        display: none;
+    display: none;
 }
+
 ul.nice-menu,
 ul.nice-menu ul {
-  color: #333333;
-  background: #eadfca;
+    color: $textGray;
+    background: $ccaTan;
 }
+
 ul.nice-menu li,
 ul.nice-menu-down li ul li {
-  color: #333333;
-  background: #eadfca;
-  width: 147px;
-  padding-right: 0;
-font-size: 11px;
+    color: $textGray;
+    background: $ccaTan;
+    width: 160px; // makes menu width = #header width
+    padding-right: 0;
+    font-size: 11px;
 }
 
 ul.nice-menu a {
-  color: #333333;
-  background: #eadfca;
-  text-decoration: none;
-  padding-right: 0;
-  text-align: center;
+    color: $textGray;
+    background: $ccaTan;
+    text-decoration: none;
+    padding-right: 0;
+    text-align: center;
 }
-ul.nice-menu a:hover {
-  color: #fff;
-  background: #968668;
-  text-decoration: none;
-  padding-right: 0;
-}
-ul.nice-menu-down li, ul.nice-menu li{
-  border: 1px solid #B8A47F;
-  padding-right: 0;
 
+ul.nice-menu a:hover {
+    color: #fff;
+    background: #968668;
+    text-decoration: none;
+    padding-right: 0;
 }
+
+ul.nice-menu-down li, ul.nice-menu li{
+    border: 1px solid #b8a47f;
+    padding-right: 0;
+}
+
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent ul li,
 #header-region ul.nice-menu-down li.menuparent {
-  background: none;
-padding-right: 0;
+    background: none;
+    padding-right: 0;
 }
+
 ul.nice-menu-down .menuparent a {
-  padding-right: 0;
-background: none;
+    padding-right: 0;
+    background: none;
 }
 
 ul.nice-menu-down li.menuparent,
 // Repeat for Garland header. */
+// @todo is there a reason why we're repeating styles
+// for a theme we're not using?
 #header-region ul.nice-menu-down li.menuparent {
-  background: none;
-  padding-right: 0;
+    background: none;
+    padding-right: 0;
 }
 
 ul.nice-menu-down li.menuparent:hover,
@@ -1360,15 +1367,15 @@ ul.nice-menu-down li ul li:hover,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li.menuparent:hover,
 #header-region ul.nice-menu-down li.over {
-  background: #968668;
-padding-right: 0;
+    background: #968668;
+    padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li li.menuparent {
-  background: none;
-padding-right: 0;
+    background: none;
+    padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent:hover,
@@ -1377,13 +1384,14 @@ ul.nice-menu-down li ul li a:hover,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li li.menuparent:hover,
 #header-region ul.nice-menu-down li li.over {
-  background: #968668;
-  padding-right: 0;
+    background: #968668;
+    padding-right: 0;
 }
 
 #menu-568 {
-font-weight: bold;
+    font-weight: bold;
 }
+
 //WEBFORMS*/
 #webform-component-author, #webform-component-title, #webform-component-publisher, #webform-component-year, #webform-component-isbnissn, #webform-component-format {
 padding-left: 10px;
