@@ -17,3 +17,11 @@
     border-color: darken($ccaOrange, 5%);
     color: darken($ccaOrange, 30%);
 }
+
+// Undo extra spacing on blue header boxes on home page
+// badly needs refactoring because…well you see the selectors, don't you?
+#newbooks h3,
+#services h3,
+#home-news h3 {
+    margin-top: 0;
+}
