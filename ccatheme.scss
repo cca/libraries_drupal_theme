@@ -120,7 +120,7 @@ h1 {
     letter-spacing: 1px;
     font-family: helvetica, arial, sans-serif;
     font-weight: normal;
-    border-bottom: 1px dashed #eadfca;
+    border-bottom: 1px dashed $ccaTan;
 }
 
 h2 {
@@ -161,7 +161,7 @@ p {
 
 img {
     padding: 2px;
-    border: 1px solid #ccc;
+    border: 1px solid $lightGray;
     margin: 2px 5px;
 }
 
@@ -220,69 +220,108 @@ font-size: .9em;
 }
 
 // ** COLUMNS and CONTAINERS**
-#column{
-margin-right: 5px;
-margin-left: 5px;
-width: 360px;
-float: left;
+#column {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 360px;
+  float: left;
 }
 
-#redborder, #grayborder, #blueborder{
-float: left;
-min-width: 350px;
-padding: 5px;
-margin: 5px;
-margin-bottom: 10px;
+// primarily used for lists of databases
+.list-box {
+  // @todo all this spacing, layout should be handled by other class
+  // list-box should only touch bg-color & border
+  float: left;
+  // @todo why is this rule necessary?
+  min-width: 350px;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  // color overridden by modifier classes below
+  border: 1px solid $ccaTan;
+
+  ul li {
+    list-style: none;
+  }
 }
 
-#redborder{
-background-color: #fff;
-border: 1px solid #8b0000;
+.list-box--red {
+   border-color: #8b0000;
 }
 
-#blueborder{
-border: 1px solid #000066;
-background-color: #eadfca;
+.list-box--blue {
+    background-color: $ccaTan;
+    border-color: $darkBlue;
 }
 
-#grayborder{
-border: 1px solid #000066;
-background-color: #ccc;
+.list-box--gray {
+    background-color: $lightGray;
+    border-color: $darkBlue;
 }
+
+#redborder,
+#grayborder,
+#blueborder {
+    float: left;
+    min-width: 350px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+#redborder {
+    background-color: #fff;
+    border: 1px solid #8b0000;
+}
+
+#blueborder {
+    background-color: $ccaTan;
+    border: 1px solid $darkBlue;
+}
+
+// fun thing about "grayborder"? it's border isn't gray!
+// the frickin' background is gray but the border is blue
+#grayborder {
+    background-color: $lightGray;
+    border: 1px solid $darkBlue;
+}
+
 #redborder ul li, #grayborder ul li, #blueborder ul li {
-list-style: none;
-
+    list-style: none;
 }
 
-#singlepage{
-margin: 0px 0px 10px 110px;
-width: 700px;
-float: left;
-padding: 25px;
-border: 1px dashed #ccc;
+#singlepage {
+    margin: 0 0 10px 110px;
+    width: 700px;
+    float: left;
+    padding: 25px;
+    border: 1px dashed $lightGray;
 }
 
+// links in footer
+// virtually none of these styles are necessary
 #ccalinks {
     float: left;
     width: 950px;
     color: #666;
     font-size: 12px;
-    background-color: #eadfca;
+    background-color: $ccaTan;
     text-align: right;
     padding: 3px 10px 3px 3px;
     margin: 3px 0;
     border: 1px dotted #b8a47f;
-}
-#ccalinks a {
-color: #444;
-font-size: 12px;
-border:none;
-}
-#ccalinks a:hover {
-color: #fff;
-font-size: 12px;
-background-color: #968668;
-text-decoration: none;
+
+    a {
+    border: none;
+    color: #444;
+
+        &:hover {
+            background-color: #968668;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }
 
 // -----Millenium New Book Book Detail Page - Google Books --------
@@ -1277,27 +1316,26 @@ width: 960px;
    */
   form tbody
   {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $lightGray;
   }
 
   form th
   {
     text-align: left;
     padding-right: 1em;
-    border-bottom: 3px solid #ccc;
+    border-bottom: 3px solid $lightGray;
   }
 
   form tbody th
   {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $lightGray;
   }
 
-  form thead th
-  {
+form thead th {
     text-align: left;
     padding-right: 1em;
-    border-bottom: 3px solid #ccc;
-  }
+    border-bottom: 3px solid $lightGray;
+}
 
 // NICE MENUS */
 #nice-menu-1 li ul li ul li {
@@ -1306,13 +1344,13 @@ width: 960px;
 
 ul.nice-menu,
 ul.nice-menu ul {
-    color: $textGray;
+    color: $darkGray;
     background: $ccaTan;
 }
 
 ul.nice-menu li,
 ul.nice-menu-down li ul li {
-    color: $textGray;
+    color: $darkGray;
     background: $ccaTan;
     width: 160px; // makes menu width = #header width
     padding-right: 0;
@@ -1320,7 +1358,7 @@ ul.nice-menu-down li ul li {
 }
 
 ul.nice-menu a {
-    color: $textGray;
+    color: $darkGray;
     background: $ccaTan;
     text-decoration: none;
     padding-right: 0;
@@ -1416,7 +1454,7 @@ border-top: 1px dashed #666;
 #webform-component-your_name{padding:1px 15px;float:left;width:440px;min-height:80px;border-top:1px solid #990000;background:#ccc;clear:both;}#webform-component-your_cca_affiliation,#webform-component-your_program{padding:1px 10px;float:left;width:219px;min-height:80px;border-top:1px solid #990000;background:#ccc;}
 #edit-submit{
 border: 1px solid #072e99;
-background: #ccc;
+background: $lightGray;
 color: #072e99;
 padding: 3px;
 }
@@ -1428,17 +1466,17 @@ margin: 15px 75px 15px 600px;
 }
 #webform-client-form-71 {
 border: 1px solid #990000;
-background: #eadfca;
+background: $ccaTan;
 margin-top: 5px;
 }
 #webform-component-course-and-contact-information  {
 border: 1px solid #990000;
-background: #eadfca;
+background: $ccaTan;
 padding: 0px 20px;
 }
 #webform-component-item-one {
 border: 1px solid #990000;
-background: #ccc;
+background: $lightGray;
 padding: 0px 20px;
 }
 #webform-client-form-179 input[type="text"]{
@@ -1462,7 +1500,7 @@ legend {
 color: #990000;
 }
 #webform-component-item_two, #webform-component-item_three, #webform-component-item_four, #webform-component-item_five, #webform-component-item_six, #webform-component-item_seven, #webform-component-item_eight, #webform-component-item_nine, #webform-component-item_ten  {
-background: #ccc;
+background: $lightGray;
 padding: 0px 20px;
 }
 #webform-component-email_address{padding:1px 15px; float:left; min-width:918px;min-height:80px;border-bottom:1px solid #990000;background:#ccc;}
@@ -1517,7 +1555,7 @@ font-size: 12px;
 }
 .picture a img{
 padding: 2px;
-border: 1px solid #ccc;
+border: 1px solid $lightGray;
 margin: 2px 5px;
 text-decoration: none;
 }
@@ -1535,7 +1573,7 @@ visibility: visible;
 float: left;
 display: inline;
 margin: 0px 10px 5px 5px;
-border: 1px solid #ccc;
+border: 1px solid $lightGray;
 padding: 3px;
 }
 .node-type-blog .node-inner .content {
@@ -1555,7 +1593,7 @@ color: #666;
 font-size: 11px;
 color: #333;
 padding: 5px;
-border-bottom: 1px dotted #ccc;
+border-bottom: 1px dotted $lightGray;
 
 }
 
@@ -1592,7 +1630,7 @@ color: #728BBA;
 .node-type-blog{
 margin-bottom: 25px;
 padding-bottom: 8px;
-border: 3px solid #eadfca;
+border: 3px solid $ccaTan;
 padding: 10px;
 clear: both;
 }
@@ -1615,7 +1653,7 @@ margin-left: 16px;
 }
 #catalogsearch a, #searchbox a {
 color: #027;
-background: #ccc;
+background: $lightGray;
 border: 1px solid #777;
 float: left;
 margin: 0px 0px 0px 4px;
@@ -1650,7 +1688,7 @@ text-decoration: none;
 }
 
 #searchbox #searchcontainer {
-  background: #ccc;
+  background: $lightGray;
 }
 
 #searchcontainer select {
@@ -1668,7 +1706,7 @@ text-decoration: none;
   padding: 0px 4px;
   border: 1px solid #777;
   font-size: 12px;
-  background: #ccc;
+  background: $lightGray;
   color: #027;
 }
 
@@ -1733,7 +1771,7 @@ text-align: left;
 padding: 0;
 margin: 0px 5px 5px 5px;
 background-color: #fff;
-border: 1px solid #ccc;
+border: 1px solid $lightGray;
 }
 #tools-3, #tools-4, #tools-5{
 display: inline;
@@ -1771,7 +1809,7 @@ margin-bottom: 10px;
 
 #tools h3{
 background: #eee;
-border-bottom: 1px dotted #ccc;
+border-bottom: 1px dotted $lightGray;
 padding-left: 10px;
 font-size: 13px;
 }
@@ -1831,7 +1869,7 @@ margin: 0px 1px 3px 1px;
 padding: 5px;
 }
 #newbooks a:hover img {
-background: #ccc;
+background: $lightGray;
 border: 1px solid #666;
 padding: 5px;
 }
@@ -1883,7 +1921,7 @@ margin: 0px 10px;
 #delicious-posts-ccalibrary h2
 {display: none;}
 #edit-search-block-form-1-wrapper input[type="text"]{
-border: 1px solid #ccc;
+border: 1px solid $lightGray;
 font-size: 13px;
 height: 14px;
 padding: 3px;
