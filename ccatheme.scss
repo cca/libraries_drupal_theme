@@ -86,7 +86,7 @@ div.field.field-type-nodereference.field-field-company-lookup div.field-items di
 div[id^='node-'].node.node-teaser.node-type-mat-company h2.title,
 div[id^='node-'].node.node-mine.node-teaser.node-type-mat-company h2.title {
     font-size: 14px;
-    padding: 0px;
+    padding: 0;
 }
 
 ul.menu li, div.content, body.sidebar-left.lightbox-processed.admin-menu, body.sidebar-left.lightbox-processed.tableHeader-processed.admin-menu, .admin-menu {
@@ -126,7 +126,7 @@ h1 {
 h2 {
     font-size: 18px;
     padding: 2px 0px 2px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 h2 img {
@@ -136,19 +136,19 @@ h2 img {
 h3 {
     font-size: 16px;
     padding: 0px 0px 2px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 h4 {
     font-size: 15px;
     padding: 0px 0px 2px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 h5 {
     font-size: 13px;
     padding: 0px 0px 2px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 p {
@@ -156,7 +156,7 @@ p {
     font-size: 12px;
     line-height: 15px;
     padding: 0px 20px 10px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 img {
@@ -168,18 +168,18 @@ img {
 p.date {
     font-size: 12px;
     padding: 0px 0px 20px 10px;
-    margin: 0px;
+    margin: 0;
 }
 
 ul,ol {
-    margin: 3px 10px 12px 0px;
+    margin: 3px 10px 12px 0;
 }
 
 li {
     color: #333333;
     font-size: 12px;
     line-height: 15px;
-    margin: 3px 10px 0px 0px;
+    margin: 3px 10px 0px 0;
 }
 
 input, td {
@@ -270,7 +270,7 @@ border: 1px dashed #ccc;
     background-color: #eadfca;
     text-align: right;
     padding: 3px 10px 3px 3px;
-    margin: 3px 0px;
+    margin: 3px 0;
     border: 1px dotted #b8a47f;
 }
 #ccalinks a {
@@ -391,7 +391,7 @@ div[id^='node-'].node.node-type-bib div.terms.terms-inline {
     display: block;
     position: absolute;
     top: 96px;
-    left: 0px;
+    left: 0;
 }
 div.terms.terms-inline ul.links.inline li {
     font-size: 10px;
@@ -428,7 +428,7 @@ div[id^='node-'].node.node-teaser.node-type-bib {
 }
 
 div[id^='node-'].node.node-teaser.node-type-bib h2.title {
-        padding: 0px;
+        padding: 0;
     font-size: 12px;
 }
 
@@ -514,7 +514,7 @@ display: none;
   {
     margin: 0;
     padding: 10px;
-padding-top: 0px;
+padding-top: 0;
 background-color: #FFFFFF;
   }
 
@@ -715,7 +715,7 @@ border-bottom: none;
   }
   #titlebanner {
    clear: both;
-   padding: 7px 0px;
+   padding: 7px 0;
   }
   #search-box /* Wrapper for the search form */
   {
@@ -763,34 +763,34 @@ border-bottom: none;
 font-size: 1.1em;
 }
 //* footer **/
-   #footer
-  {
+#footer {
    color: #777;
    font-family: 'lucida grande', verdana, arial, sans-serif;
    font-size: 11px;
    text-align: center;
-margin: 0px;
+margin: 0;
 line-height: 17px;
-  }
-  #footer #simpson {
- color: #968668;
-padding-left: 4px;
 }
 
-#footer img{
-border: 0px;
-padding: 0px;
-vertical-align: middle;
-float: right;
+#footer #simpson {
+    color: #968668;
+    padding-left: 4px;
 }
+
+#footer img {
+    padding: 0;
+    vertical-align: middle;
+    float: right;
+}
+
 #footer a {
-border: 0px;
+border: 0;
 }
-  #footer-inner
-  {
-  }
 
-  #footer-message {
+#footer-inner {
+}
+
+#footer-message {
 display: inline;
 float: left;
 text-align: center;
@@ -1313,7 +1313,7 @@ ul.nice-menu-down li ul li {
   color: #333333;
   background: #eadfca;
   width: 147px;
-  padding-right: 0px;
+  padding-right: 0;
 font-size: 11px;
 }
 
@@ -1321,28 +1321,28 @@ ul.nice-menu a {
   color: #333333;
   background: #eadfca;
   text-decoration: none;
-  padding-right: 0px;
+  padding-right: 0;
   text-align: center;
 }
 ul.nice-menu a:hover {
   color: #fff;
   background: #968668;
   text-decoration: none;
-  padding-right: 0px;
+  padding-right: 0;
 }
 ul.nice-menu-down li, ul.nice-menu li{
   border: 1px solid #B8A47F;
-  padding-right: 0px;
+  padding-right: 0;
 
 }
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent ul li,
 #header-region ul.nice-menu-down li.menuparent {
   background: none;
-padding-right: 0px;
+padding-right: 0;
 }
 ul.nice-menu-down .menuparent a {
-  padding-right: 0px;
+  padding-right: 0;
 background: none;
 }
 
@@ -1350,7 +1350,7 @@ ul.nice-menu-down li.menuparent,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li.menuparent {
   background: none;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 ul.nice-menu-down li.menuparent:hover,
@@ -1361,14 +1361,14 @@ ul.nice-menu-down li ul li:hover,
 #header-region ul.nice-menu-down li.menuparent:hover,
 #header-region ul.nice-menu-down li.over {
   background: #968668;
-padding-right: 0px;
+padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li li.menuparent {
   background: none;
-padding-right: 0px;
+padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent:hover,
@@ -1378,7 +1378,7 @@ ul.nice-menu-down li ul li a:hover,
 #header-region ul.nice-menu-down li li.menuparent:hover,
 #header-region ul.nice-menu-down li li.over {
   background: #968668;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 #menu-568 {
@@ -1476,14 +1476,14 @@ overflow: visible;
 min-width: 600px;
 }
 #togg-link, #togg-link2 {
-border: 0px;
+border: 0;
 font-size: 11px;
 }
 .views-field-picture {
 display: block;
 float: left;
-padding: 0px;
-margin: 0px;
+padding: 0;
+margin: 0;
 }
 .views-field-value-4, .views-field-value-5, .views-field-mail{
 display: inline;
@@ -1552,7 +1552,7 @@ border-bottom: 1px dotted #ccc;
 }
 
 #comments .links {
-padding: 0px;
+padding: 0;
 margin: 5px;
 }
 #comments h2{
@@ -1570,15 +1570,15 @@ color: #777;
 border-bottom: 1px dotted #777;
 }
 .node-type-blog h2.title{
-margin: 0px;
-padding-left: 0px;
+margin: 0;
+padding-left: 0;
 font-size: 16px;
 }
 .node-type-blog h2.title a{
-border: 0px;
+border: 0;
 }
 .node-type-blog h2.title a:hover{
-border: 0px;
+border: 0;
 color: #728BBA;
 }
 .node-type-blog{
@@ -1596,7 +1596,7 @@ margin-left: 3px;
 }
 .terms-inline ul.links.inline li{
 padding: 1px;
-margin: 0px;
+margin: 0;
 }
 ul.links.inline li.node_read_more a{
 color: #072e99;
@@ -1667,7 +1667,7 @@ text-decoration: none;
 #searchcontainer h3 {
   font-weight: normal;
   margin: 0px 0px 5px 2px;
-  padding: 0px;
+  padding: 0;
   color: #333;
   font-style: italic;
   font-size: 13px;
@@ -1678,10 +1678,10 @@ text-decoration: none;
   color: #027;
   float: none;
   font-size: 11px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: 12px;
   margin: 0px 0px 0px 430px;
-  padding: 0px;
+  padding: 0;
 }
 
 #catalogsearch #searchcontainer a {
@@ -1696,14 +1696,14 @@ text-decoration: none;
 #home-column{
 display: inline;
 float: left;
-padding: 0px;
+padding: 0;
 margin: 0px 5px 5px 5px;
 }
 #home-column3{
 display: inline;
 float: right;
 width: 300px;
-padding: 0px;
+padding: 0;
 margin: 0px 5px 5px 5px;
 }
 #newbooks, #services, #home-news, #home-resources {
@@ -1711,8 +1711,8 @@ display: inline;
 float: left;
 width: 300px;
 text-align: left;
-padding: 0px;
-margin: 0px;
+padding: 0;
+margin: 0;
 }
 #home-resources {
 width: 350px;
@@ -1722,7 +1722,7 @@ display: inline;
 float: left;
 width: 940px;
 text-align: left;
-padding: 0px;
+padding: 0;
 margin: 0px 5px 5px 5px;
 background-color: #fff;
 border: 1px solid #ccc;
@@ -1732,8 +1732,8 @@ display: inline;
 float: left;
 width: 290px;
 text-align: left;
-padding: 0px;
-margin: 0px;
+padding: 0;
+margin: 0;
 }
 #newbooks h3, #services h3, #tools h3, #home-news h3{
 margin-bottom: 5px;
@@ -1768,7 +1768,7 @@ padding-left: 10px;
 font-size: 13px;
 }
 #tools a img{
-padding: 0px;
+padding: 0;
 float: left;
 clear: both;
 }
@@ -1779,21 +1779,21 @@ font-size: 13px;
 }
 #home-news .item-list{
 width: 290px;
-margin-top: 0px;
+margin-top: 0;
 }
 #services ul li, #home-news .item-list ul li{
 list-style-type: none;
-margin: 7px 0px;
+margin: 7px 0;
 font-size: 12px;
 line-height: 21px;
 border-bottom: 1px dotted #CAD5EA;
 }
 #tools-3 li, #tools-4 li, #tools-5 li{
 list-style-type: none;
-margin: 3px 0px 6px 0px;
+margin: 3px 0px 6px 0;
 background: #fff;
 width: 200px;
-padding: 2px 0px;
+padding: 2px 0;
 font-size: 12px;
 line-height: 19px;
 }
@@ -1828,7 +1828,7 @@ border: 1px solid #666;
 padding: 5px;
 }
 #newbooks a, #services a, #tools a, #home-news a{
-border: 0px;
+border: 0;
 }
 #home-resources p{
 font-size:18px;
