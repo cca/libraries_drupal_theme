@@ -1712,7 +1712,7 @@ text-decoration: none;
 
 #searchcontainer h3 {
   font-weight: normal;
-  margin: 0px 0px 5px 2px;
+  margin: 0 0 5px 2px;
   padding: 0;
   color: #333;
   font-style: italic;
@@ -1726,12 +1726,12 @@ text-decoration: none;
   font-size: 11px;
   letter-spacing: 0;
   line-height: 12px;
-  margin: 0px 0px 0px 430px;
+  margin: 0 0 0 430px;
   padding: 0;
 }
 
 #catalogsearch #searchcontainer a {
-  background: #EEE;
+  background: #eee;
 }
 
 #catalogsearch, #searchbox {
@@ -1743,7 +1743,7 @@ text-decoration: none;
     display: inline;
     float: left;
     padding: 0;
-    margin: 0px 5px 5px 5px;
+    margin: 0 5px 5px 5px;
 }
 
 #home-column3 {
@@ -1751,7 +1751,7 @@ text-decoration: none;
     float: right;
     width: 300px;
     padding: 0;
-    margin: 0px 5px 5px 5px;
+    margin: 0 5px 5px 5px;
 }
 
 #newbooks,
@@ -1771,40 +1771,32 @@ text-decoration: none;
 }
 
 #tools {
-    display: inline;
     float: left;
     width: 940px;
-    text-align: left;
     padding: 0;
-    margin: 0px 5px 5px 5px;
-    background-color: #fff;
     border: 1px solid $lightGray;
-}
 
-#tools-3,
-#tools-4,
-#tools-5 {
-    display: inline;
-    float: left;
-    width: 290px;
-    text-align: left;
-    padding: 0;
-    margin: 0;
+    h3 {
+        background: #eee;
+        border-bottom: 1px dotted $lightGray;
+        padding-left: 1em;
+        font-size: 13px;
+    }
 }
 
 #newbooks h3,
 #services h3,
 #tools h3,
 #home-news h3 {
+    font-weight: normal;
     margin-bottom: 5px;
     padding: 4px;
-    font-weight: normal;
 }
 
 #newbooks {
-    color: #333;
     background-color: #fff;
-    border: 1px solid #728BBA;
+    border: 1px solid #728bba;
+    color: #333;
     margin-bottom: 5px;
     width: 250px;
 }
@@ -1825,19 +1817,6 @@ text-decoration: none;
     margin-bottom: 10px;
 }
 
-#tools h3 {
-    background: #eee;
-    border-bottom: 1px dotted $lightGray;
-    padding-left: 10px;
-    font-size: 13px;
-}
-
-#tools a img {
-    padding: 0;
-    float: left;
-    clear: both;
-}
-
 #home-news h3 a, #newbooks h3 a {
     color: #333;
     font-size: 13px;
@@ -1854,28 +1833,6 @@ text-decoration: none;
     font-size: 12px;
     line-height: 21px;
     border-bottom: 1px dotted #CAD5EA;
-}
-
-#tools-3 li, #tools-4 li, #tools-5 li {
-    list-style-type: none;
-    margin: 3px 0px 6px 0;
-    background: #fff;
-    width: 200px;
-    padding: 2px 0;
-    font-size: 12px;
-    line-height: 19px;
-}
-
-#tools-3 li {
-    background: #fff;
-}
-
-#tools-4 li {
-    background: #fff;
-}
-
-#tools-3 li a:hover, #tools-4 li a:hover, #tools-5 li a:hover {
-    border-bottom: 1px dotted #777;
 }
 
 #services ul li strong a {
