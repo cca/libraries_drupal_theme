@@ -1397,17 +1397,21 @@ line-height: 14px;
 font-family: arial;
 letter-spacing: 1px;
 }
-#catalogsearch a#toggle, #searchbox a#toggle2 {
-color: #666;
-background: #eee;
-border: 1px solid #777;
-text-decoration: none;
+
+#catalogsearch #toggle,
+#searchbox #toggle2 {
+    color: #666;
+    background: #eee;
+    border: 1px solid #777;
+    text-decoration: none;
 }
-#catalogsearch a:hover#toggle, #searchbox a:hover#toggle2 {
-color: #111;
-background: #aaa;
-border: 1px solid #111;
-text-decoration: none;
+
+#catalogsearch :hover#toggle,
+#searchbox :hover#toggle2 {
+    color: #111;
+    background: #aaa;
+    border: 1px solid #111;
+    text-decoration: none;
 }
 
 #searchcontainer {
