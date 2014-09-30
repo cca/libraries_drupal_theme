@@ -31,19 +31,19 @@
 a:link,
 a:visited,
 dt a {
-    color: #072e99;
-    text-decoration: none;
-    border-bottom: 1px dotted #072e99;
+  color: #072e99;
+  text-decoration: none;
+  border-bottom: 1px dotted #072e99;
 }
 
 a:active {
-color: #0000ff;
+  color: #0000ff;
 }
 
 a:hover {
-color: #666;
-text-decoration: none;
-border-bottom: 1px dotted #666;
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px dotted #666;
 }
 
 a img, a img:hover {border: none; background: white; text-decoration: none; }
@@ -54,169 +54,170 @@ a img, a img:hover {border: none; background: white; text-decoration: none; }
 
 body.not-front.not-logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed div.terms.terms-inline,
 body.not-front.logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed.admin-menu div.terms.terms-inline {
-    display: block;
-    position: absolute;
-    top: 250px;
-    left: 350px;
-    border: 1px solid rgb(169, 169, 169);
-    margin: 10px 16px 10px 10px !important;
-    padding: 4px;
-    width: 500px;
+  display: block;
+  position: absolute;
+  top: 250px;
+  left: 350px;
+  border: 1px solid rgb(169, 169, 169);
+  margin: 10px 16px 10px 10px !important;
+  padding: 4px;
+  width: 500px;
 }
 
 div.field.field-type-text.field-field-sample-desc {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 350px;
-    border: 1px solid rgb(169, 169, 169);
-    margin: 10px 16px 10px 10px !important;
-    padding: 4px;
-    width: 500px;
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: 1px solid rgb(169, 169, 169);
+  margin: 10px 16px 10px 10px !important;
+  padding: 4px;
+  width: 500px;
 }
 
 div.field.field-type-link.field-field-company-url {
-    float: left;
+  float: left;
 }
 
 div.field.field-type-nodereference.field-field-company-lookup div.field-items div.field-item.odd {
-    display: inline;
+  display: inline;
 }
 
 div[id^='node-'].node.node-teaser.node-type-mat-company h2.title,
 div[id^='node-'].node.node-mine.node-teaser.node-type-mat-company h2.title {
-    font-size: 14px;
-    padding: 0;
+  font-size: 14px;
+  padding: 0;
 }
 
 ul.menu li, div.content, body.sidebar-left.lightbox-processed.admin-menu, body.sidebar-left.lightbox-processed.tableHeader-processed.admin-menu, .admin-menu {
-background: none !important;
-background-color: #FFFFFF !important;
+  background: none !important;
+  background-color: #fff !important;
 }
 
-div#admin-menu {
-background-color: #000000;
+#admin-menu {
+  background-color: #000;
 }
 
 div.logo-floater h1 a:link {
-color: #ffffff;
+  color: #fff;
 }
 
 // ********** HEADING / TEXT / LIST STYLES ***************
 
 // Establishes default type face for website
 a, div, h1, h2, h3, h4, input, li, p, strong, table, textarea, address {
-    font-family: Lucida grande, Verdana, Arial, Helvetica, sans-serif;
+  font-family: Lucida grande, Verdana, Arial, Helvetica, sans-serif;
 }
 
 
-h1, h2, h3, h4, h5 { color: #333; }
+h1, h2, h3, h4, h5 {
+  color: $darkGray;
+}
 
 h1 {
-    font-size: 21px;
-    padding: 0px 5px;
-    text-align: left;
-    color: #6B562D;
-    letter-spacing: 1px;
-    font-family: helvetica, arial, sans-serif;
-    font-weight: normal;
-    border-bottom: 1px dashed $ccaTan;
+  font-size: 21px;
+  padding: 0 5px;
+  text-align: left;
+  color: #6B562D;
+  letter-spacing: 1px;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: normal;
+  border-bottom: 1px dashed $ccaTan;
 }
 
 h2 {
-    font-size: 18px;
-    padding: 2px 0px 2px 10px;
-    margin: 0;
-}
+  font-size: 18px;
+  padding: 2px 0 2px 10px;
+  margin: 0;
 
-h2 img {
-    margin: 0px 15px 0px 5px;
+  img {
+    margin: 0 15px 0 5px;
+  }
 }
 
 h3 {
-    font-size: 16px;
-    padding: 0px 0px 2px 10px;
-    margin: 0;
+  font-size: 16px;
+  padding: 0 0 2px 10px;
+  margin: 0;
 }
 
 h4 {
-    font-size: 15px;
-    padding: 0px 0px 2px 10px;
-    margin: 0;
+  font-size: 15px;
+  padding: 0 0 2px 10px;
+  margin: 0;
 }
 
 h5 {
-    font-size: 13px;
-    padding: 0px 0px 2px 10px;
-    margin: 0;
+  font-size: 13px;
+  padding: 0 0 2px 10px;
+  margin: 0;
 }
 
 p {
-    color: #333;
+  color: #333;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 0 20px 10px 10px;
+  margin: 0;
+
+  strong {
     font-size: 12px;
-    line-height: 15px;
-    padding: 0px 20px 10px 10px;
-    margin: 0;
+  }
 }
 
 img {
-    padding: 2px;
-    border: 1px solid $lightGray;
-    margin: 2px 5px;
+  padding: 2px;
+  border: 1px solid $lightGray;
+  margin: 2px 5px;
 }
 
 p.date {
-    font-size: 12px;
-    padding: 0px 0px 20px 10px;
-    margin: 0;
+  font-size: 12px;
+  padding: 0 0 20px 10px;
+  margin: 0;
 }
 
 ul,ol {
-    margin: 3px 10px 12px 0;
+  margin: 3px 10px 12px 0;
 }
 
 li {
-    color: #333333;
-    font-size: 12px;
-    line-height: 15px;
-    margin: 3px 10px 0px 0;
+  color: $darkGray;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 3px 10px 0 0;
 }
 
 input, td {
-    color: #333333;
-    font-size: 11px;
+  color: $darkGray;
+  font-size: 11px;
 }
-
-p strong {
-font-size: 12px;
-}
-
 
 #sidebar-left ul, #sidebar-right ul {
-margin-top: 5px;
+  margin-top: 5px;
 }
+
 #sidebar-left h3, #sidebar-right h3, #sidebar-left h2, #sidebar-right h2, #sidebar-left h4, #sidebar-right h4 {
-font-size: 13px;
+  font-size: 13px;
 }
 
 dt {
-margin: 5px;
-font-size: 12px;
+  margin: 5px;
+  font-size: 12px;
 }
 
-
 blockquote {
-    font-size: .9em;
-    text-align: justify;
-    border-left: 1px solid #999;
-    margin: 0px 0px 5px 65px;
-    padding: 0px 120px 0px 5px;
+  font-size: .9em;
+  text-align: justify;
+  border-left: 1px solid #999;
+  margin: 0 0 5px 65px;
+  padding: 0 120px 0 5px;
 }
 
 .text {
-font-weight: normal;
-color: #333;
-font-size: .9em;
+  font-weight: normal;
+  color: #333;
+  font-size: .9em;
 }
 
 // ** COLUMNS and CONTAINERS**
@@ -247,385 +248,366 @@ font-size: .9em;
 }
 
 .list-box--red {
-   border-color: #8b0000;
+ border-color: #8b0000;
 }
 
 .list-box--blue {
-    background-color: $ccaTan;
-    border-color: $darkBlue;
+  background-color: $ccaTan;
+  border-color: $darkBlue;
 }
 
 .list-box--gray {
-    background-color: $lightGray;
-    border-color: $darkBlue;
+  background-color: $lightGray;
+  border-color: $darkBlue;
 }
 
 #redborder,
 #grayborder,
 #blueborder {
-    float: left;
-    min-width: 350px;
-    padding: 5px;
-    margin: 5px;
-    margin-bottom: 10px;
+  float: left;
+  min-width: 350px;
+  padding: 5px;
+  margin: 5px;
+  margin-bottom: 10px;
 }
 
 #redborder {
-    background-color: #fff;
-    border: 1px solid #8b0000;
+  background-color: #fff;
+  border: 1px solid #8b0000;
 }
 
 #blueborder {
-    background-color: $ccaTan;
-    border: 1px solid $darkBlue;
+  background-color: $ccaTan;
+  border: 1px solid $darkBlue;
 }
 
 // fun thing about "grayborder"? it's border isn't gray!
 // the frickin' background is gray but the border is blue
 #grayborder {
-    background-color: $lightGray;
-    border: 1px solid $darkBlue;
+  background-color: $lightGray;
+  border: 1px solid $darkBlue;
 }
 
 #redborder ul li, #grayborder ul li, #blueborder ul li {
-    list-style: none;
+  list-style: none;
 }
 
 #singlepage {
-    margin: 0 0 10px 110px;
-    width: 700px;
-    float: left;
-    padding: 25px;
-    border: 1px dashed $lightGray;
+  margin: 0 0 10px 110px;
+  width: 700px;
+  float: left;
+  padding: 25px;
+  border: 1px dashed $lightGray;
 }
 
 // links in footer
 // virtually none of these styles are necessary
 #ccalinks {
-    float: left;
-    width: 950px;
-    color: #666;
-    font-size: 12px;
-    background-color: $ccaTan;
-    text-align: right;
-    padding: 3px 10px 3px 3px;
-    margin: 3px 0;
-    border: 1px dotted #b8a47f;
+  float: left;
+  width: 950px;
+  color: #666;
+  font-size: 12px;
+  background-color: $ccaTan;
+  text-align: right;
+  padding: 3px 10px 3px 3px;
+  margin: 3px 0;
+  border: 1px dotted #b8a47f;
 
-    a {
+  a {
     border: none;
     color: #444;
 
-        &:hover {
-            background-color: #968668;
-            color: #fff;
-            text-decoration: none;
-        }
+    &:hover {
+      background-color: #968668;
+      color: #fff;
+      text-decoration: none;
     }
+  }
 }
 
 @import '_mllm';
 
 //* SPECIAL *
-#creditfooter // feedburner
-{
-display: none;
+// feedburner
+#creditfooter {
+  display: none;
 }
 
 //* body *
 body {
-    background-color: #fff;
-    margin: 0;
-    padding: 10px;
-    padding-top: 0;
+  background-color: #fff;
+  margin: 0;
+  padding: 10px;
+  padding-top: 0;
 }
 
 // Wrapper for logo
 #logo {
-    margin: 0 10px 0 0;
-    padding: 0;
+  margin: 0 10px 0 0;
+  padding: 0;
 }
 
 #logo a,
 #skip-to-nav a,
 ul.nice-menu a {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 /* The name of the website */
-#site-name  {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1.3em;
-}
+#site-name {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1.3em;
 
-  #site-name a:link,
-  #site-name a:visited
-  {
-    color: #000;
-    text-decoration: none;
-  }
-
-  #site-name a:hover
-  {
+  a:hover {
     text-decoration: underline;
   }
+}
 
- #content-inner
-  {
-   padding: 5px 5px 5px 5px;
-  }
+#site-name a:link,
+#site-name a:visited
+{
+  color: #000;
+  text-decoration: none;
+}
 
-  .breadcrumb /* The path to the current page in the form of a list of links */
-  {
-    padding-bottom: 0; /* Undo system.css */
-  }
+#content-inner {
+  padding: 5px 5px 5px 5px;
+}
 
-  h1.title, /* The title of the page */
-  h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
-  h3.title /* Comment title */
-  {
-    margin: 0;
-  }
+.breadcrumb /* The path to the current page in the form of a list of links */
+{
+  padding-bottom: 0; /* Undo system.css */
+}
 
-  div.messages /* Important messages (status, warning, and error) for the user */
-  {
-  }
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */
+{
+  margin: 0;
+}
 
-  div.status /* Normal priority messages */
-  {
-  }
+div.messages /* Important messages (status, warning, and error) for the user */
+{
+}
 
-  div.warning, tr.warning /* Medium priority messages */
-  {
-    /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
-  }
+div.status /* Normal priority messages */
+{
+}
 
-  div.error, tr.error /* High priority messages. See also the .error declaration below. */
-  {
-  }
+div.warning, tr.warning /* Medium priority messages */
+{
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
 
-  div.tabs /* See also the tabs.css file. */
-  {
-  }
+div.error, tr.error /* High priority messages. See also the .error declaration below. */
+{
+}
 
-  .help /* Help text on a page */
-  {
-    margin: 1em 0;
-  }
+.help /* Help text on a page */
+{
+  margin: 1em 0;
+}
 
-  .more-help-link /* Link to more help */
-  {
-    font-size: 0.85em;
-    text-align: right;
-  }
+.more-help-link /* Link to more help */
+{
+  font-size: 0.85em;
+  text-align: right;
+}
 
-  #content-area /* Wrapper for the actual page content */
-  {
-  }
+#content-area /* Wrapper for the actual page content */
+{
+}
 
-  ul.links /* List of links */
-  {
-    margin: 1em 0;
-    padding: 0;
-  }
+ul.links /* List of links */
+{
+  margin: 1em 0;
+  padding: 0;
+}
 
-  ul.links.inline
-  {
-    margin: 0;
-    display: inline;
-  }
+ul.links.inline
+{
+  margin: 0;
+  display: inline;
+}
 
-  ul.links li
-  {
-    display: inline;
-    list-style-type: none;
-    padding: 0 0.5em;
-  }
+ul.links li
+{
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
 
-  .pager /* A list of page numbers when more than 1 page of content is available */
-  {
-    clear: both;
-    margin: 1em 0;
-    text-align: center;
-  }
+.pager /* A list of page numbers when more than 1 page of content is available */
+{
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
 
-  .pager a, .pager strong.pager-current
-  {
-    padding: 0.5em;
-  }
+.pager a, .pager strong.pager-current
+{
+  padding: 0.5em;
+}
 
-  .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
-  {
-    margin: 1em 0;
-  }
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+{
+  margin: 1em 0;
+}
 
-  #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
-  {
-  }
+#content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+{
+}
 
 //* navbar **/
-  #navbar
-  {
+#navbar {
   overflow: visible;
-  }
- .with-navbar #content,
-  .with-navbar #sidebar-left,
-  .with-navbar #sidebar-right
-  {
-    margin-top: 75px;
-  }
+}
 
-  #navbar-inner
-  {
-  }
-  #titlebanner {
-   clear: both;
-   padding: 7px 0;
-  }
-  #search-box /* Wrapper for the search form */
-  {
-  }
+.with-navbar #content,
+.with-navbar #sidebar-left,
+.with-navbar #sidebar-right {
+  margin-top: 75px;
+}
 
-  #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
-  {
-    display: none;
-  }
+#titlebanner {
+  clear: both;
+  padding: 7px 0;
+}
 
-  #primary /* Primary links */
-  {
-  }
+#search-box /* Wrapper for the search form */
+{
+}
 
-  #secondary /* Secondary links */
-  {
-  }
+#edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
+{
+  display: none;
+}
 
 //* sidebar-left **/
-  #sidebar-left
-  {
-   font-size: .9em;
-  }
+#sidebar-left {
+ font-size: .9em;
+}
 
-  #sidebar-left-inner
-  {
+#sidebar-left-inner {
  border-right: 1px dotted #968668;
  min-height: 250px;
  padding-right: 5px;
 
-  }
+}
 
 //* sidebar-right **/
-  #sidebar-right
-  {
-   font-size: .9em;
-   border-left: 1px dotted #968668;
-   min-height: 250px;
-  }
+#sidebar-right
+{
+ font-size: .9em;
+ border-left: 1px dotted #968668;
+ min-height: 250px;
+}
 
-  #sidebar-right-inner
-  {
-    }
+#sidebar-right-inner
+{
+}
 
 #sidebar-left h2,
 #sidebar-right h2 {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 //* footer **/
 #footer {
-    color: #777;
-    font-size: 11px;
-    text-align: center;
-    margin: 0;
-    line-height: 17px;
+  color: #777;
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  line-height: 17px;
 
-    #simpson {
-        color: #968668;
-        padding-left: 4px;
-    }
+  #simpson {
+    color: #968668;
+    padding-left: 4px;
+  }
 
-    img {
-        padding: 0;
-        vertical-align: middle;
-        float: right;
-    }
+  img {
+    padding: 0;
+    vertical-align: middle;
+    float: right;
+  }
 
-    a {
-        border: 0;
-    }
+  a {
+    border: 0;
+  }
 }
 
 #footer-message {
-display: inline;
-float: left;
-text-align: center;
-width: 960px;
-  }
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 960px;
+}
 
 //* closure **/
-  #closure-blocks /* Wrapper for any blocks placed in the closure region */
-  {
-  }
+#closure-blocks /* Wrapper for any blocks placed in the closure region */
+{
+}
 
 //* Drupal nodes **/
-  .node /* Node wrapper */
-  {
-  }
+.node /* Node wrapper */
+{
+}
 
-  .node-inner /* Additional wrapper for node */
-  {
-  }
+.node-inner /* Additional wrapper for node */
+{
+}
 
-  .sticky /* A sticky node (displayed before others in a list) */
-  {
-  }
+.sticky /* A sticky node (displayed before others in a list) */
+{
+}
 
-  .node-unpublished /* Unpublished nodes */
-  {
-    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-  }
+.node-unpublished /* Unpublished nodes */
+{
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
 
-  .node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
-  .comment-unpublished div.unpublished
-  {
-    height: 0;
-    overflow: visible;
-    color: #d8d8d8;
-    font-size: 75px;
-    line-height: 1;
-    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    word-wrap: break-word; /* A very nice CSS3 property */
-  }
+.node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+.comment-unpublished div.unpublished
+{
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
 
-  .node-mine /* A node created by the current user */
-  {
-  }
+.node-mine /* A node created by the current user */
+{
+}
 
-  .node-teaser /* A node displayed as teaser */
-  {
-  }
+.node-teaser /* A node displayed as teaser */
+{
+}
 
   /* All nodes are given a node-type-FOO class that describes the type of
    * content that it is. If you create a new content type called
    * "my-custom-type", it will receive a "node-type-my-custom-type" class.
    */
-  .node-type-page /* Page content node */
-  {
-  }
+   .node-type-page /* Page content node */
+   {
+   }
 
-  .node-type-story /* Story content node */
-  {
-  }
+   .node-type-story /* Story content node */
+   {
+   }
 
-  .node h2.title /* Node title */
-  {
-  }
+   .node h2.title /* Node title */
+   {
+   }
 
-  .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
-  {
+   .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+   {
     color: #c00;
   }
 
@@ -665,352 +647,352 @@ width: 960px;
   }
 
 //* Drupal comments **/
-  #comments /* Wrapper for the list of comments and its title */
-  {
-    margin: 1em 0;
-  }
+#comments /* Wrapper for the list of comments and its title */
+{
+  margin: 1em 0;
+}
 
-  #comments-title /* Heading for the list of comments */
-  {
-  }
+#comments-title /* Heading for the list of comments */
+{
+}
 
-  .comment /* Wrapper for a single comment */
-  {
-  }
+.comment /* Wrapper for a single comment */
+{
+}
 
-  .comment-inner /* Additional wrapper for a single comment */
-  {
-  }
+.comment-inner /* Additional wrapper for a single comment */
+{
+}
 
-  .comment-preview /* Preview of the comment before submitting new or updated comment */
-  {
-  }
+.comment-preview /* Preview of the comment before submitting new or updated comment */
+{
+}
 
-  .comment.new /* A new comment since the user last viewed the page. */
-  {
-  }
+.comment.new /* A new comment since the user last viewed the page. */
+{
+}
 
-  .comment.odd /* An odd-numbered comment in the list of comments */
-  {
-  }
+.comment.odd /* An odd-numbered comment in the list of comments */
+{
+}
 
-  .comment.even /* An even-numbered comment in the list of comments */
-  {
-  }
+.comment.even /* An even-numbered comment in the list of comments */
+{
+}
 
-  .comment.first /* The first comment in the list of comments */
-  {
-  }
+.comment.first /* The first comment in the list of comments */
+{
+}
 
-  .comment.last /* The last comment in the list of comments */
-  {
-  }
+.comment.last /* The last comment in the list of comments */
+{
+}
 
-  .comment-unpublished /* Unpublished comments */
-  {
-    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-  }
+.comment-unpublished /* Unpublished comments */
+{
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
 
-  .comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
-  {
-  }
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+{
+}
 
-  .comment-published /* Published comments */
-  {
-  }
+.comment-published /* Published comments */
+{
+}
 
-  .comment-by-anon /* A comment created by an anonymous user */
-  {
-  }
+.comment-by-anon /* A comment created by an anonymous user */
+{
+}
 
-  .comment-by-author /* A comment created by the node's author */
-  {
-  }
+.comment-by-author /* A comment created by the node's author */
+{
+}
 
-  .comment-mine /* A comment created by the current user */
-  {
-  }
+.comment-mine /* A comment created by the current user */
+{
+}
 
-  .comment h3.title /* Comment title */
-  {
-  }
+.comment h3.title /* Comment title */
+{
+}
 
-  .new /* "New" marker for comments that are new for the current user */
-  {
-    color: #c00;
-  }
+.new /* "New" marker for comments that are new for the current user */
+{
+  color: #c00;
+}
 
-  .comment .picture /* The picture of the comment author */
-  {
-  }
+.comment .picture /* The picture of the comment author */
+{
+}
 
-  .comment .submitted /* The "posted by" information */
-  {
-  }
+.comment .submitted /* The "posted by" information */
+{
+}
 
-  .comment .content /* Comment's content wrapper */
-  {
-  }
+.comment .content /* Comment's content wrapper */
+{
+}
 
-  .comment .user-signature /* The user's signature */
-  {
-  }
+.comment .user-signature /* The user's signature */
+{
+}
 
-  .comment ul.links /* Comment links. See also the ul.links declaration above. */
-  {
-    margin: 1em 0;
-  }
+.comment ul.links /* Comment links. See also the ul.links declaration above. */
+{
+  margin: 1em 0;
+}
 
-  .indented /* Nested comments are indented */
-  {
-    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
-  }
+.indented /* Nested comments are indented */
+{
+  /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
 
-  .preview .comment /* Preview of the comment before submitting new or updated comment */
-  {
-    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
-  }
+.preview .comment /* Preview of the comment before submitting new or updated comment */
+{
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
 
 //* Drupal blocks **/
-  .block /* Block wrapper */
-  {
-    margin-bottom: 1em;
-  }
+.block /* Block wrapper */
+{
+  margin-bottom: 1em;
+}
 
-  .block.region-odd /* Zebra striping for each block in the region */
-  {
-  }
+.block.region-odd /* Zebra striping for each block in the region */
+{
+}
 
-  .block.region-even /* Zebra striping for each block in the region */
-  {
-  }
+.block.region-even /* Zebra striping for each block in the region */
+{
+}
 
-  .block.odd /* Zebra striping independent of each region */
-  {
-  }
+.block.odd /* Zebra striping independent of each region */
+{
+}
 
-  .block.even /* Zebra striping independent of each region */
-  {
-  }
+.block.even /* Zebra striping independent of each region */
+{
+}
 
-  .region-count-1 /* Incremental count for each block in the region */
-  {
-  }
+.region-count-1 /* Incremental count for each block in the region */
+{
+}
 
-  .count-1 /* Incremental count independent of each region */
-  {
-  }
+.count-1 /* Incremental count independent of each region */
+{
+}
 
-  .block-inner /* Additional wrapper for block */
-  {
-  }
+.block-inner /* Additional wrapper for block */
+{
+}
 
-  .block h2.title /* Block title */
-  {
-  }
+.block h2.title /* Block title */
+{
+}
 
-  .block .content /* Block's content wrapper */
-  {
-  }
+.block .content /* Block's content wrapper */
+{
+}
 
-  #block-aggregator-category-1 /* Block for the latest news items in the first category */
-  {
-  }
+#block-aggregator-category-1 /* Block for the latest news items in the first category */
+{
+}
 
-  #block-aggregator-feed-1 /* Block for the latest news items in the first feed */
-  {
-  }
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */
+{
+}
 
-  #block-block-1 /* First administrator-defined block */
-  {
-  }
+#block-block-1 /* First administrator-defined block */
+{
+}
 
-  #block-blog-0 /* "Recent blog posts" block */
-  {
-  }
+#block-blog-0 /* "Recent blog posts" block */
+{
+}
 
-  #block-book-0 /* "Book navigation" block for the current book's table of contents */
-  {
-  }
+#block-book-0 /* "Book navigation" block for the current book's table of contents */
+{
+}
 
-  #block-comment-0 /* "Recent comments" block */
-  {
-  }
+#block-comment-0 /* "Recent comments" block */
+{
+}
 
-  #block-forum-0 /* "Active forum topics" block */
-  {
-  }
+#block-forum-0 /* "Active forum topics" block */
+{
+}
 
-  #block-forum-1 /* "New forum topics" block */
-  {
-  }
+#block-forum-1 /* "New forum topics" block */
+{
+}
 
-  #block-menu-primary-links /* "Primary links" block */
-  {
-  }
+#block-menu-primary-links /* "Primary links" block */
+{
+}
 
-  #block-menu-secondary-links /* "Secondary links" block */
-  {
-  }
+#block-menu-secondary-links /* "Secondary links" block */
+{
+}
 
-  #block-node-0 /* "Syndicate" block for primary RSS feed */
-  {
-  }
+#block-node-0 /* "Syndicate" block for primary RSS feed */
+{
+}
 
-  #block-poll-0 /* "Most recent poll" block */
-  {
-  }
+#block-poll-0 /* "Most recent poll" block */
+{
+}
 
-  #block-profile-0 /* "Author information" block for the profile of the page's author */
-  {
-  }
+#block-profile-0 /* "Author information" block for the profile of the page's author */
+{
+}
 
-  #block-search-0 /* "Search form" block */
-  {
-  }
+#block-search-0 /* "Search form" block */
+{
+}
 
-  #block-statistics-0 /* "Popular content" block */
-  {
-  }
+#block-statistics-0 /* "Popular content" block */
+{
+}
 
-  #block-user-0 /* "User login form" block */
-  {
-  }
+#block-user-0 /* "User login form" block */
+{
+}
 
-  #block-user-1 /* "Navigation" block for Drupal navigation menu */
-  {
-  }
+#block-user-1 /* "Navigation" block for Drupal navigation menu */
+{
+}
 
-  #block-user-2 /* "Who's new" block for a list of the newest users */
-  {
-  }
+#block-user-2 /* "Who's new" block for a list of the newest users */
+{
+}
 
-  #block-user-3 /* "Who's online" block for a list of the online users */
-  {
-  }
+#block-user-3 /* "Who's online" block for a list of the online users */
+{
+}
 
 //* Drupal boxes **/
   /* Wrapper for Comment form, Comment viewing options, Menu admin, and
    * Search results.
    */
-  .box /* Wrapper for box */
-  {
-  }
+   .box /* Wrapper for box */
+   {
+   }
 
-  .box-inner /* Additional wrapper for box */
-  {
-  }
+   .box-inner /* Additional wrapper for box */
+   {
+   }
 
-  .box h2.title /* Box title */
-  {
-  }
+   .box h2.title /* Box title */
+   {
+   }
 
-  .box .content /* Box's content wrapper */
-  {
-  }
+   .box .content /* Box's content wrapper */
+   {
+   }
 
 //* Miscellaneous Drupal styles **/
-  .error /* Errors that are separate from div.messages status messages (see above.) */
-  {
-    /* color: #e55; */ /* Drupal core uses a #e55 background */
-  }
+.error /* Errors that are separate from div.messages status messages (see above.) */
+{
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
 
-  .warning /* Warnings that are separate from div.messages status messages (see above.) */
-  {
-    /* color: #e09010; */ /* Drupal core uses a #e09010 background */
-  }
+.warning /* Warnings that are separate from div.messages status messages (see above.) */
+{
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
 
-  .more-link /* Aggregator, blog, and forum more link */
-  {
-    text-align: right;
-  }
+.more-link /* Aggregator, blog, and forum more link */
+{
+  text-align: right;
+}
 
-  #user-login-form /* Drupal's default login form */
-  {
-    text-align: left;
-  }
+#user-login-form /* Drupal's default login form */
+{
+  text-align: left;
+}
 
-  tr.even /* Some tables have rows marked even or odd. */
-  {
-    /* background-color: #eee; */ /* Drupal core uses a #eee background */
-  }
+tr.even /* Some tables have rows marked even or odd. */
+{
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
 
-  tr.odd
-  {
-    /* background-color: #eee; */ /* Drupal core uses a #eee background */
-  }
+tr.odd
+{
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
 
-  li a.active /* The active item in a Drupal menu */
-  {
-    color: #000;
-  }
+li a.active /* The active item in a Drupal menu */
+{
+  color: #000;
+}
 
 
 //* Drupal forms **/
-  .form-item, /* Wrapper for a form element (or group of form elements) and its label */
-  .form-checkboxes,
-  .form-radios
-  {
-    margin: 1em 0;
-  }
+.form-item, /* Wrapper for a form element (or group of form elements) and its label */
+.form-checkboxes,
+.form-radios
+{
+  margin: 1em 0;
+}
 
-  .form-item input.error, /* Highlight the form elements that caused a form submission error */
-  .form-item textarea.error,
-  .form-item select.error
-  {
-    border: 2px solid #c00;
-  }
+.form-item input.error, /* Highlight the form elements that caused a form submission error */
+.form-item textarea.error,
+.form-item select.error
+{
+  border: 2px solid #c00;
+}
 
-  .form-item label /* The label for a form element */
-  {
-    display: block;
-    font-weight: bold;
-  }
+.form-item label /* The label for a form element */
+{
+  display: block;
+  font-weight: bold;
+}
 
-  .form-item label.option /* The label for a radio button or checkbox */
-  {
-    display: inline;
-    font-weight: normal;
-  }
+.form-item label.option /* The label for a radio button or checkbox */
+{
+  display: inline;
+  font-weight: normal;
+}
 
-  .form-required /* The part of the label that indicates a required field */
-  {
-    color: #c00;
-  }
+.form-required /* The part of the label that indicates a required field */
+{
+  color: #c00;
+}
 
-  .form-item .description /* The descriptive help text (separate from the label) */
-  {
-    font-size: 0.85em;
-  }
+.form-item .description /* The descriptive help text (separate from the label) */
+{
+  font-size: 0.85em;
+}
 
-  .form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
-  .form-radios .form-item
-  {
-    margin: 0.4em 0;
-  }
+.form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+.form-radios .form-item
+{
+  margin: 0.4em 0;
+}
 
-  .form-submit /* The submit button */
-  {
-  }
+.form-submit /* The submit button */
+{
+}
 
-  .container-inline div, .container-inline label /* Inline labels and form divs */
-  {
-    display: inline;
-  }
+.container-inline div, .container-inline label /* Inline labels and form divs */
+{
+  display: inline;
+}
 
-  .tips /* Tips for Drupal's input formats */
-  {
-    margin: 0;
-    padding: 0;
-    font-size: 0.9em;
-  }
+.tips /* Tips for Drupal's input formats */
+{
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
 
 //* OpenID **/
   /* The default styling for the OpenID login link seems to assume Garland's
    * styling of list items.
    */
-  #user-login-form ul /* OpenID creates a new ul above the login form's links. */
-  {
+   #user-login-form ul /* OpenID creates a new ul above the login form's links. */
+   {
     margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
   }
 
@@ -1040,8 +1022,8 @@ width: 960px;
   /* We overrode these styles in html-elements.css, but restore them for the
    * forms on the site.
    */
-  form tbody
-  {
+   form tbody
+   {
     border-top: 1px solid $lightGray;
   }
 
@@ -1057,71 +1039,71 @@ width: 960px;
     border-bottom: 1px solid $lightGray;
   }
 
-form thead th {
+  form thead th {
     text-align: left;
     padding-right: 1em;
     border-bottom: 3px solid $lightGray;
-}
+  }
 
 // NICE MENUS */
 #nice-menu-1 li ul li ul li {
-    display: none;
+  display: none;
 }
 
 ul.nice-menu,
 ul.nice-menu ul {
-    color: $darkGray;
-    background: $ccaTan;
+  color: $darkGray;
+  background: $ccaTan;
 }
 
 ul.nice-menu li,
 ul.nice-menu-down li ul li {
-    color: $darkGray;
-    background: $ccaTan;
+  color: $darkGray;
+  background: $ccaTan;
     width: 160px; // makes menu width = #header width
     padding-right: 0;
     font-size: 11px;
-}
+  }
 
-ul.nice-menu a {
+  ul.nice-menu a {
     color: $darkGray;
     background: $ccaTan;
     text-decoration: none;
     padding-right: 0;
     text-align: center;
-}
+  }
 
-ul.nice-menu a:hover {
+  ul.nice-menu a:hover {
     color: #fff;
     background: #968668;
     text-decoration: none;
     padding-right: 0;
-}
+  }
 
-ul.nice-menu-down li, ul.nice-menu li {
+  ul.nice-menu-down li, ul.nice-menu li {
     border: 1px solid #b8a47f;
     padding-right: 0;
-}
+  }
 
-ul.nice-menu-down li.menuparent,
-ul.nice-menu-down li.menuparent ul li,
-#header-region ul.nice-menu-down li.menuparent {
+  ul.nice-menu-down li.menuparent,
+  ul.nice-menu-down li.menuparent ul li,
+  #header-region ul.nice-menu-down li.menuparent {
     background: none;
     padding-right: 0;
-}
+  }
 
-ul.nice-menu-down .menuparent a {
+  ul.nice-menu-down .menuparent a {
     padding-right: 0;
     background: none;
-}
+  }
 
-ul.nice-menu-down li.menuparent,
+  ul.nice-menu-down li.menuparent,
 // Repeat for Garland header. */
 // @todo is there a reason why we're repeating styles
 // for a theme we're not using?
 #header-region ul.nice-menu-down li.menuparent {
-    background: none;
-    padding-right: 0;
+  background: none;
+  padding-right: 0;
 }
 
 ul.nice-menu-down li.menuparent:hover,
@@ -1131,15 +1113,15 @@ ul.nice-menu-down li ul li:hover,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li.menuparent:hover,
 #header-region ul.nice-menu-down li.over {
-    background: #968668;
-    padding-right: 0;
+  background: #968668;
+  padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li li.menuparent {
-    background: none;
-    padding-right: 0;
+  background: none;
+  padding-right: 0;
 }
 
 ul.nice-menu-down li li.menuparent:hover,
@@ -1148,270 +1130,305 @@ ul.nice-menu-down li ul li a:hover,
 // Repeat for Garland header. */
 #header-region ul.nice-menu-down li li.menuparent:hover,
 #header-region ul.nice-menu-down li li.over {
-    background: #968668;
-    padding-right: 0;
+  background: #968668;
+  padding-right: 0;
 }
 
 #menu-568 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 //WEBFORMS*/
 #webform-component-author, #webform-component-title, #webform-component-publisher, #webform-component-year, #webform-component-isbnissn, #webform-component-format {
-padding-left: 10px;
+  padding-left: 10px;
 }
+
 #webform-component-needed_for, #webform-component-for_departmentcourse, #webform-component-other_reason_for_recommendations {
-padding: 1px 15px;
-float: left;
-width: 444px;
+  padding: 1px 15px;
+  float: left;
+  width: 444px;
 }
+
 .form-item {
-padding-left: 10px;
+  padding-left: 10px;
 }
+
 .description.mollom-privacy {
-color: #666;
-font-size: 11px;
-padding-left: 25px;
+  color: #666;
+  font-size: 11px;
+  padding-left: 25px;
 }
+
 #webform-component-needed-for {
-border-top: 1px dashed #666;
+  border-top: 1px dashed #666;
 }
 
 #webform-component-your_name {padding:1px 15px;float:left;width:440px;min-height:80px;border-top:1px solid #990000;background:#ccc;clear:both;}#webform-component-your_cca_affiliation,#webform-component-your_program {padding:1px 10px;float:left;width:219px;min-height:80px;border-top:1px solid #990000;background:#ccc;}
+
 #edit-submit {
-border: 1px solid #072e99;
-background: $lightGray;
-color: #072e99;
-padding: 3px;
+  border: 1px solid #072e99;
+  background: $lightGray;
+  color: #072e99;
+  padding: 3px;
 }
+
 #webform-client-form-71 #edit-submit {
-margin: 15px 75px 15px 725px;
+  margin: 15px 75px 15px 725px;
 }
+
 #webform-client-form-179 input#edit-submit {
-margin: 15px 75px 15px 600px;
+  margin: 15px 75px 15px 600px;
 }
+
 #webform-client-form-71 {
-border: 1px solid #990000;
-background: $ccaTan;
-margin-top: 5px;
+  border: 1px solid #990000;
+  background: $ccaTan;
+  margin-top: 5px;
 }
+
 #webform-component-course-and-contact-information  {
-border: 1px solid #990000;
-background: $ccaTan;
-padding: 0px 20px;
+  border: 1px solid #990000;
+  background: $ccaTan;
+  padding: 0 20px;
 }
+
 #webform-component-item-one {
-border: 1px solid #990000;
-background: $lightGray;
-padding: 0px 20px;
+  border: 1px solid #990000;
+  background: $lightGray;
+  padding: 0 20px;
 }
+
 #webform-client-form-179 input[type="text"]{
-width: 300px;
+  width: 300px;
 }
+
 #webform-component-course_reserves_requested_for, #webform-component-semester, #webform-component-course_title, #webform-component-phone_number, #webform-component-author_1, #webform-component-title_1, #webform-component-check_out_length, #webform-component-email_addr  {
-float: left;
-width: 350px;
+  float: left;
+  width: 350px;
 }
+
 #webform-component-instructor, #webform-component-email_address, #webform-component-call_number_1 {
-float: left;
-width: 350px;
-clear: both;
+  float: left;
+  width: 350px;
+  clear: both;
 }
+
 #webform-component-notes {
-float: left;
-width: 685px;
-clear: both;
+  float: left;
+  width: 685px;
+  clear: both;
 }
+
 legend {
-color: #990000;
+  color: #990000;
 }
+
 #webform-component-item_two, #webform-component-item_three, #webform-component-item_four, #webform-component-item_five, #webform-component-item_six, #webform-component-item_seven, #webform-component-item_eight, #webform-component-item_nine, #webform-component-item_ten  {
-background: $lightGray;
-padding: 0px 20px;
+  background: $lightGray;
+  padding: 0 20px;
 }
+
 #webform-component-email_address {padding:1px 15px; float:left; min-width:918px;min-height:80px;border-bottom:1px solid #990000;background:#ccc;}
+
 .not-logged-in #webform-component-staff_only {
-display: none;
+  display: none;
 }
+
 .logged-in #webform-component-staff_only {
-display: inline;
-float: left;
-margin: 25px;
+  display: inline;
+  float: left;
+  margin: 25px;
 }
 //GOOGLE DOCS IFRAMES*/
 iframe#googledocs {
-padding: 5px;
-overflow: visible;
+  padding: 5px;
+  overflow: visible;
 }
 //STAFF PAGE*/
 .views-view-grid .col-1 {
-min-width: 600px;
+  min-width: 600px;
 }
+
 #togg-link, #togg-link2 {
-border: 0;
-font-size: 11px;
+  border: 0;
+  font-size: 11px;
 }
 
 .views-field-picture {
-display: block;
-float: left;
-padding: 0;
-margin: 0;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
 }
 
 .views-field-value-4, .views-field-value-5, .views-field-mail {
-display: inline;
-float: left;
-padding-right: 3px;
+  display: inline;
+  float: left;
+  padding-right: 3px;
 
 }
 
 .views-field-value-2:before, .views-field-value-3:before {
-content:"|";
+  content:"|";
 }
 
 .views-field-value-4, .views-field-value-5, .views-field-value-3 {
-font-weight: bold;
-font-size: 1.03em;
-padding-top: 5px;
+  font-weight: bold;
+  font-size: 1.03em;
+  padding-top: 5px;
 }
 
 .field-content {
-    font-size: 12px;
-    line-height: 1.286;
+  font-size: 12px;
+  line-height: 1.286;
 
-    .picture img {
-        width: 100px
-    }
+  .picture img {
+    width: 100px
+  }
 }
 
 .picture a img {
-padding: 2px;
-border: 1px solid $lightGray;
-margin: 2px 5px;
-text-decoration: none;
+  padding: 2px;
+  border: 1px solid $lightGray;
+  margin: 2px 5px;
+  text-decoration: none;
 }
 
 .views-field-value .field-content {
-    margin: 5px 10px 5px 125px;
-    color: #666;
+  margin: 5px 10px 5px 125px;
+  color: #666;
 }
 
 .views-field-value .field-content-toggle {
-display: none;
-visibility: visible;
+  display: none;
+  visibility: visible;
 }
 
 //BLOG*/
 .node-type-blog .node-inner .content img {
-float: left;
-display: inline;
-margin: 0px 10px 5px 5px;
-border: 1px solid $lightGray;
-padding: 3px;
+  float: left;
+  display: inline;
+  margin: 0 10px 5px 5px;
+  border: 1px solid $lightGray;
+  padding: 3px;
 }
+
 .node-type-blog .node-inner .content {
-font-size: 12px;
-line-height: 18px;
-clear: both;
-margin: 5px 25px;
-padding-top: 5px;
-padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  clear: both;
+  margin: 5px 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
+
 .node-type-blog .meta, #comments .submitted, .node-type-blog .meta a  {
-font-size: 11px;
-color: #666;
+  font-size: 11px;
+  color: #666;
 }
 
 #comments .content {
-font-size: 11px;
-color: #333;
-padding: 5px;
-border-bottom: 1px dotted $lightGray;
+  font-size: 11px;
+  color: #333;
+  padding: 5px;
+  border-bottom: 1px dotted $lightGray;
 
 }
 
 #comments .links {
-padding: 0;
-margin: 5px;
+  padding: 0;
+  margin: 5px;
 }
+
 #comments h2 {
-font-size: .96em;
-margin-bottom: 3px;
+  font-size: .96em;
+  margin-bottom: 3px;
 }
+
 #comments h3 {
-display:none;
+  display:none;
 }
+
 .node-type-blog li.blog_usernames_blog {
-display: none;
+  display: none;
 }
+
 .node-type-blog ul.links li a {
-color: #777;
-border-bottom: 1px dotted #777;
+  color: #777;
+  border-bottom: 1px dotted #777;
 }
+
 .node-type-blog h2.title {
-margin: 0;
-padding-left: 0;
-font-size: 16px;
+  margin: 0;
+  padding-left: 0;
+  font-size: 16px;
 }
+
 .node-type-blog h2.title a {
-border: 0;
+  border: 0;
 }
+
 .node-type-blog h2.title a:hover {
-border: 0;
-color: $lightBlue;
+  border: 0;
+  color: $lightBlue;
 }
+
 .node-type-blog {
-margin-bottom: 25px;
-padding-bottom: 8px;
-border: 3px solid $ccaTan;
-padding: 10px;
-clear: both;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+  border: 3px solid $ccaTan;
+  padding: 10px;
+  clear: both;
 }
+
 .meta .submitted {
-float: left;
+  float: left;
 }
+
 .meta .terms-inline {
-margin-left: 3px;
+  margin-left: 3px;
 }
+
 .terms-inline ul.links.inline li {
-padding: 1px;
-margin: 0;
+  padding: 1px;
+  margin: 0;
 }
+
 ul.links.inline li.node_read_more a {
-color: #072e99;
+  color: #072e99;
 }
 // HOMEPAGE */
 #tabs {
-margin-left: 16px;
+  margin-left: 16px;
 }
+
 #catalogsearch a, #searchbox a {
-color: #027;
-background: $lightGray;
-border: 1px solid #777;
-float: left;
-margin: 0px 0px 0px 4px;
-padding: 4px;
-font-size: 13px;
-line-height: 14px;
-font-family: arial;
-letter-spacing: 1px;
+  color: #027;
+  background: $lightGray;
+  border: 1px solid #777;
+  float: left;
+  margin: 0 0 0 4px;
+  padding: 4px;
+  font-size: 13px;
+  line-height: 14px;
+  font-family: arial;
+  letter-spacing: 1px;
 }
 
 #catalogsearch #toggle,
 #searchbox #toggle2 {
-    color: #666;
-    background: #eee;
-    border: 1px solid #777;
-    text-decoration: none;
+  color: #666;
+  background: #eee;
+  border: 1px solid #777;
+  text-decoration: none;
 }
 
 #catalogsearch :hover#toggle,
 #searchbox :hover#toggle2 {
-    color: #111;
-    background: #aaa;
-    border: 1px solid #111;
-    text-decoration: none;
+  color: #111;
+  background: #aaa;
+  border: 1px solid #111;
+  text-decoration: none;
 }
 
 #searchcontainer {
@@ -1441,7 +1458,7 @@ letter-spacing: 1px;
 
 #searchcontainer input[type="submit"] {
   height: 21px;
-  padding: 0px 4px;
+  padding: 0 4px;
   border: 1px solid #777;
   font-size: 12px;
   background: $lightGray;
@@ -1478,216 +1495,218 @@ letter-spacing: 1px;
 }
 
 #home-column {
-    display: inline;
-    float: left;
-    padding: 0;
-    margin: 0 5px 5px 5px;
+  display: inline;
+  float: left;
+  padding: 0;
+  margin: 0 5px 5px 5px;
 }
 
 #home-column3 {
-    display: inline;
-    float: right;
-    width: 300px;
-    padding: 0;
-    margin: 0 5px 5px 5px;
+  display: inline;
+  float: right;
+  width: 300px;
+  padding: 0;
+  margin: 0 5px 5px 5px;
 }
 
 #newbooks,
 #services,
 #home-news,
 #home-resources {
-    display: inline;
-    float: left;
-    width: 300px;
-    text-align: left;
-    padding: 0;
-    margin: 0;
+  display: inline;
+  float: left;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 #home-resources {
-    width: 350px;
+  width: 350px;
 }
 
 #tools {
-    float: left;
-    width: 940px;
-    padding: 0;
-    border: 1px solid $lightGray;
+  float: left;
+  width: 940px;
+  padding: 0;
+  border: 1px solid $lightGray;
 
-    h3 {
-        background: #eee;
-        border-bottom: 1px dotted $lightGray;
-        padding-left: 1em;
-        font-size: 13px;
-    }
+  h3 {
+    background: #eee;
+    border-bottom: 1px dotted $lightGray;
+    padding-left: 1em;
+    font-size: 13px;
+  }
 }
 
 #newbooks h3,
 #services h3,
 #tools h3,
 #home-news h3 {
-    font-weight: normal;
-    margin-bottom: 5px;
-    padding: 4px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  padding: 4px;
 }
 
 #newbooks {
-    background-color: #fff;
-    border: 1px solid $lightBlue;
-    color: #333;
-    margin-bottom: 5px;
-    width: 250px;
+  background-color: #fff;
+  border: 1px solid $lightBlue;
+  color: #333;
+  margin-bottom: 5px;
+  width: 250px;
 }
 
 #newbooks h3,
 #services h3,
 #home-news h3 {
-    background: #e0e4fe;
-    border-bottom: 1px dotted $lightBlue;
-    padding-left: 10px;
-    font-size: 13px;
+  background: #e0e4fe;
+  border-bottom: 1px dotted $lightBlue;
+  padding-left: 10px;
+  font-size: 13px;
 }
 
 #services,
 #home-news {
-    background-color: #fff;
-    border: 1px solid $lightBlue;
-    margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid $lightBlue;
+  margin-bottom: 10px;
 }
 
-#home-news h3 a, #newbooks h3 a {
-    color: #333;
-    font-size: 13px;
+#home-news h3 a,
+#newbooks h3 a {
+  color: #333;
+  font-size: 13px;
 }
 
 #home-news .item-list {
-    width: 290px;
-    margin-top: 0;
+  width: 290px;
+  margin-top: 0;
 }
 
-#services ul li, #home-news .item-list ul li {
-    list-style-type: none;
-    margin: 7px 0;
-    font-size: 12px;
-    line-height: 21px;
-    border-bottom: 1px dotted #CAD5EA;
+#services ul li,
+#home-news .item-list ul li {
+  list-style-type: none;
+  margin: 7px 0;
+  font-size: 12px;
+  line-height: 21px;
+  border-bottom: 1px dotted #CAD5EA;
 }
 
 #services ul li strong a {
-    font-size: 12px;
-    color: #06277F;
+  font-size: 12px;
+  color: #06277F;
 }
 
 #services ul li strong a:hover {
-    color: #666;
+  color: #666;
 }
 
 #newbooks #books {
-    text-align: center;
+  text-align: center;
 }
 
 #newbooks a img {
-    text-decoration: none;
-    border: 1px solid $lightBlue;
-    margin: 0px 1px 3px 1px;
-    padding: 5px;
+  text-decoration: none;
+  border: 1px solid $lightBlue;
+  margin: 0 1px 3px 1px;
+  padding: 5px;
 }
 
 #newbooks a:hover img {
-    background: $lightGray;
-    border: 1px solid #666;
-    padding: 5px;
+  background: $lightGray;
+  border: 1px solid #666;
+  padding: 5px;
 }
 
 #newbooks a,
 #services a,
 #tools a,
 #home-news a {
-    border: 0;
+  border: 0;
 }
 
 #home-resources p {
-    font-size:18px;
-    line-height:30px;
-    color:#666;
-    margin-top: 5px;
+  font-size:18px;
+  line-height:30px;
+  color:#666;
+  margin-top: 5px;
 }
 
 #home-resources a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 //SIDEBARS */
 #sidebar-left .block ul li,
 #sidebar-right .block ul li {
-    font-size: 11px;
-    margin-bottom: 2px;
+  font-size: 11px;
+  margin-bottom: 2px;
 }
 
 #content-bottom .block-inner {
-    float: left;
-    background: #eee;
-    border: 1px solid #777;
-    width: 920px;
-    padding: 10px;
-    margin-bottom: 10px;
+  float: left;
+  background: #eee;
+  border: 1px solid #777;
+  width: 920px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #content-bottom .block-inner h2 {
-color: #990000;
+  color: #990000;
 }
 
 #content-bottom .block-inner ul {
-font-weight: bold;
+  font-weight: bold;
 }
 
 #content-bottom .block-inner ul li,
 #content-bottom .block-inner #delicious-posts-ccalibrary ul li {
-    font-weight: normal;
-    margin-left: 20px;
+  font-weight: normal;
+  margin-left: 20px;
 }
 
 #column-bottom {
-    float: left;
-    width: 420px;
-    margin: 0px 10px;
+  float: left;
+  width: 420px;
+  margin: 0 10px;
 }
 
 #delicious-posts-ccalibrary h2 {
-    display: none;
+  display: none;
 }
 
 #edit-search-block-form-1-wrapper input[type="text"] {
-    border: 1px solid $lightGray;
-    font-size: 13px;
-    height: 14px;
-    padding: 3px;
-    width: 100px;
-    margin-top: 2px;
+  border: 1px solid $lightGray;
+  font-size: 13px;
+  height: 14px;
+  padding: 3px;
+  width: 100px;
+  margin-top: 2px;
 }
 
 #webform-report-search-form fieldset.collapsible {
-    clear: both;
+  clear: both;
 }
 
 fieldset div.picture {
-    display: none;
+  display: none;
 }
 
 .node-type-chat .meta,
 .node-type-chatroom .meta {
-    display: none;
+  display: none;
 }
 
 //RSS feed styling*/
 div.feedEntryContent div.millennium.coverimage img[class*='isbn-'] {
-    width:90px;
-    height:130px;
+  width:90px;
+  height:130px;
 }
 
 #feedTitleImage {
-    width:90px;
-    height:130px;
+  width:90px;
+  height:130px;
 }
 
 // override select pieces of Bootstrap
