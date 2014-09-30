@@ -331,55 +331,33 @@ font-size: .9em;
 {
 display: none;
 }
+
 //* body *
- body
-  {
+body {
+    background-color: #fff;
     margin: 0;
     padding: 10px;
-padding-top: 0;
-background-color: #FFFFFF;
-  }
-
-  #page
-  {
-  }
-
-  #page-inner
-  {
-  }
-
-//* header *
-  #header
-  {
-  }
-
-  #header-inner
-  {
-  }
-
-  #logo-title // Wrapper for logo, website name, and slogan
-  {
-  }
-
-  #logo // Wrapper for logo
-  {
-    margin: 0 10px 0 0;
-    padding: 0;
-  }
-
-  #logo-image // The actual logo image
-  {
-  }
-  #logo a, #skip-to-nav a, ul.nice-menu a {
-border-bottom: none;
+    padding-top: 0;
 }
 
-  h1#site-name, div#site-name /* The name of the website */
-  {
+// Wrapper for logo
+#logo {
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+#logo a,
+#skip-to-nav a,
+ul.nice-menu a {
+    border-bottom: none;
+}
+
+/* The name of the website */
+#site-name  {
     margin: 0;
     font-size: 2em;
     line-height: 1.3em;
-  }
+}
 
   #site-name a:link,
   #site-name a:visited
@@ -393,43 +371,9 @@ border-bottom: none;
     text-decoration: underline;
   }
 
-  #site-slogan /* The slogan (or tagline) of a website */
-  {
-  }
-
-  #header-blocks /* Wrapper for any blocks placed in the header region */
-  {
-  }
-
-//* main (container for everything else) **/
-  #main
-  {
-  }
-
-  #main-inner
-  {
-  }
-
-//* content **/
-  #content
-  {
-  }
-
  #content-inner
   {
    padding: 5px 5px 5px 5px;
-  }
-
-  #mission /* The mission statement of the site (displayed on homepage) */
-  {
-  }
-
-  #content-top /* Wrapper for any blocks placed in the "content top" region */
-  {
-  }
-
-  #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
-  {
   }
 
   .breadcrumb /* The path to the current page in the form of a list of links */
@@ -1307,49 +1251,57 @@ min-width: 600px;
 border: 0;
 font-size: 11px;
 }
+
 .views-field-picture {
 display: block;
 float: left;
 padding: 0;
 margin: 0;
 }
+
 .views-field-value-4, .views-field-value-5, .views-field-mail {
 display: inline;
 float: left;
 padding-right: 3px;
 
 }
+
 .views-field-value-2:before, .views-field-value-3:before {
 content:"|";
 }
+
 .views-field-value-4, .views-field-value-5, .views-field-value-3 {
 font-weight: bold;
 font-size: 1.03em;
 padding-top: 5px;
-
 }
 
-.field-content .picture img {
-width: 100px;
-}
 .field-content {
-font-size: 12px;
+    font-size: 12px;
+    line-height: 1.286;
+
+    .picture img {
+        width: 100px
+    }
 }
+
 .picture a img {
 padding: 2px;
 border: 1px solid $lightGray;
 margin: 2px 5px;
 text-decoration: none;
 }
+
 .views-field-value .field-content {
-margin: 5px 10px 5px 125px;
-color: #666;
-text-align: justify;
+    margin: 5px 10px 5px 125px;
+    color: #666;
 }
+
 .views-field-value .field-content-toggle {
 display: none;
 visibility: visible;
 }
+
 //BLOG*/
 .node-type-blog .node-inner .content img {
 float: left;
