@@ -1332,7 +1332,6 @@ iframe#googledocs {
   color: #333;
   padding: 5px;
   border-bottom: 1px dotted $lightGray;
-
 }
 
 #comments .links {
@@ -1410,20 +1409,20 @@ ul.links.inline li.node_read_more a {
   margin-bottom: 10px;
   // = #home-column margin-left
   padding-left: 5px;
-}
 
-.search-wrapper .nav-tabs {
-  // needed to align .nav-tabs & .tab-content borders
-  margin-right: 0;
-}
+  .nav-tabs {
+    // needed to align .nav-tabs & .tab-content borders
+    margin-right: 0;
+  }
 
-.search-wrapper .tab-content {
-  // color == bootstrap's .nav-tabs color
-  border: 1px solid #ddd;
-  // top border comes from .nav-tabs
-  border-top: 0;
-  // padding-left == bootstrap's .nav>li>a padding-left
-  padding: 2em 15px;
+  .tab-content {
+    // color == bootstrap's .nav-tabs color
+    border: 1px solid #ddd;
+    // top border comes from .nav-tabs
+    border-top: 0;
+    // padding-left == bootstrap's .nav>li>a padding-left
+    padding: 2em 15px;
+  }
 }
 
 .search-box form {
