@@ -1402,97 +1402,42 @@ ul.links.inline li.node_read_more a {
   margin-left: 16px;
 }
 
-#catalogsearch a, #searchbox a {
-  color: #027;
-  background: $lightGray;
-  border: 1px solid #777;
-  float: left;
-  margin: 0 0 0 4px;
-  padding: 4px;
-  font-size: 13px;
-  line-height: 14px;
-  font-family: arial;
-  letter-spacing: 1px;
+// search boxes
+// currently (10/20/14) only on home page
+// but meant to be reusable
+
+.search-wrapper {
+  margin-bottom: 10px;
+  // = #home-column margin-left
+  padding-left: 5px;
 }
 
-#catalogsearch #toggle,
-#searchbox #toggle2 {
-  color: #666;
-  background: #eee;
-  border: 1px solid #777;
-  text-decoration: none;
+.search-wrapper .nav-tabs {
+  // needed to align .nav-tabs & .tab-content borders
+  margin-right: 0;
 }
 
-#catalogsearch :hover#toggle,
-#searchbox :hover#toggle2 {
-  color: #111;
-  background: #aaa;
-  border: 1px solid #111;
-  text-decoration: none;
+.search-wrapper .tab-content {
+  // color == bootstrap's .nav-tabs color
+  border: 1px solid #ddd;
+  // top border comes from .nav-tabs
+  border-top: 0;
+  // padding-left == bootstrap's .nav>li>a padding-left
+  padding: 2em 15px;
 }
 
-#searchcontainer {
-  clear: both;
-  float: left;
-  border-bottom: none;
-  width: 600px;
-  margin: -2px 5px 10px 5px;
-  padding: 10px;
-  background: #eee;
-  border: solid 1px #777;
+.search-box form {
+  // undoing form { margin: 0 } in site styles
+  // which should probably just be removed, can't see how that's useful
+  margin-bottom: 1em;
+  margin-top: 1em;
+  // margin-left = h3 padding-left from site styles
+  // the labels in search box are h3s but this is rather arbitrary
+  // in other contexts
+  margin-left: 10px;
 }
 
-#searchbox #searchcontainer {
-  background: $lightGray;
-}
-
-#searchcontainer select {
-  font-size: 13px;
-  width: 125px;
-  word-wrap: normal;
-}
-
-#searchcontainer input[type="text"] {
-  width: 400px;
-}
-
-#searchcontainer input[type="submit"] {
-  height: 21px;
-  padding: 0 4px;
-  border: 1px solid #777;
-  font-size: 12px;
-  background: $lightGray;
-  color: #027;
-}
-
-#searchcontainer h3 {
-  font-weight: normal;
-  margin: 0 0 5px 2px;
-  padding: 0;
-  color: #333;
-  font-style: italic;
-  font-size: 13px;
-}
-
-#searchcontainer a {
-  border: none;
-  color: #027;
-  float: none;
-  font-size: 11px;
-  letter-spacing: 0;
-  line-height: 12px;
-  margin: 0 0 0 430px;
-  padding: 0;
-}
-
-#catalogsearch #searchcontainer a {
-  background: #eee;
-}
-
-#catalogsearch, #searchbox {
-  display: inline;
-  float: left;
-}
+// home page columns
 
 #home-column {
   display: inline;
