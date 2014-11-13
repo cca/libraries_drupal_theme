@@ -8,7 +8,8 @@
     "watch": "sass --style compressed --watch ccatheme.scss:ccatheme.css",
     "build": "sass --style compressed --sourcemap=none ccatheme.scss ccatheme.css",
     "clean": "rm *.map",
-    "push": "scp ccatheme.css live:~/libraries.cca.edu/sites/all/themes/ccatheme/"
+    "push": "scp ccatheme.css live:~/libraries.cca.edu/sites/all/themes/ccatheme/",
+    "cache-clear":  "ssh live 'cd /usr/share/acquia-drupal6; /Users/ephetteplace/drush/drush cc all -y"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net/)",
   "license": "MIT"
