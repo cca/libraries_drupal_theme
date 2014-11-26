@@ -1,6 +1,3 @@
-/* $Id:layout-fixed.css,
-v 1.5.2.3 2009/02/13 19:20:19 johnalbin Exp $ */
-
 /* * LAYOUT STYLES
 *
 * Define CSS classes to create a table-free,
@@ -27,10 +24,7 @@ border,
 padding,
 overflow */
 
-
 /** body **/
-body {
-}
 #page,
 #closure-blocks {
   /* * If you want to make the page a fixed width and centered in the viewport, * this is the standards-compliant way to do that. See also the ie.css file
@@ -38,8 +32,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
-}
-#page-inner {
 }
 #navigation-top,
 #navigation {
@@ -82,18 +74,8 @@ to the link. Un-comment the following CSS to use this technique. */
 */
 
 /** header **/
-#header {
-}
-#header-inner {
-}
-#logo-title {
-}
 #logo {
   float: left;
-}
-#site-name {
-}
-#site-slogan {
 }
 #header-blocks {
   clear: both; /* Clear the logo */
@@ -102,8 +84,6 @@ to the link. Un-comment the following CSS to use this technique. */
 /** main (container for everything else) **/
 #main {
   position: relative;
-}
-#main-inner {
 }
 
 /** content **/
@@ -199,16 +179,6 @@ to the link. Un-comment the following CSS to use this technique. */
 #sidebar-right-inner {
   margin: 0 0 0 20px;
   padding: 0;
-}
-
-/** footer **/
-#footer {
-}
-#footer-inner {
-}
-
-/** closure **/
-#closure-blocks /* See also the #page declaration above that this div shares. */ {
 }
 
 /** Prevent overflowing content **/
