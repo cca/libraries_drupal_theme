@@ -365,25 +365,22 @@ ul.nice-menu a {
 }
 
 #site-name a:link,
-#site-name a:visited
-{
+#site-name a:visited {
   color: #000;
   text-decoration: none;
 }
 
-#content-inner {
-  padding: 5px 5px 5px 5px;
-}
-
-.breadcrumb /* The path to the current page in the form of a list of links */
-{
+/* The path to the current page in the form of a list of links */
+.breadcrumb {
   padding-bottom: 0; /* Undo system.css */
 }
 
-h1.title, /* The title of the page */
-h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
-h3.title /* Comment title */
-{
+/* The title of the page */
+h1.title,
+/* Block title or the title of a piece of content when it is given in a list of content */
+h2.title,
+/* Comment title */
+h3.title {
   margin: 0;
 }
 
