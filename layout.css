@@ -152,8 +152,6 @@ to the link. Un-comment the following CSS to use this technique. */
 .with-navbar #sidebar-right {
   margin-top: 3.6em; /* Set this to the same value as the navbar height above. */
 }
-#navbar-inner {
-}
 #search-box {
   width: 200px;
   margin-right: -200px; /* Negative value of #search-box's width. */
@@ -165,24 +163,17 @@ to the link. Un-comment the following CSS to use this technique. */
 #secondary {
   margin-left: 200px; /* Width of search-box */
 }
-#navbar ul /* Primary and secondary links */
-{
+/* Primary and secondary links */
+#navbar ul  {
   margin: 0;
   padding: 0;
   text-align: left;
 }
-#navbar li /* A simple method to get navbar links to appear in one line. */ {
+/* A simple method to get navbar links to appear in one line. */
+#navbar li {
   float: left;
   padding: 0 10px 0 0;
 }
-
-/* There are many methods to get navbar links to appear in one line.
-* Here's an alternate method: */
-/* #navbar li {
-  display: inline;
-  padding: 0 10px 0 0;
-}
-*/
 
 /** sidebar-left **/
 #sidebar-left {
@@ -230,9 +221,6 @@ to the link. Un-comment the following CSS to use this technique. */
 #closure-blocks {
   overflow: visible;
   word-wrap: break-word; /* A very nice CSS3 property */
-}
-#navbar {
-  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
 }
 
 /* If a div.clear-block doesn't have any content after it and its bottom edge
