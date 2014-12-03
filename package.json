@@ -11,7 +11,8 @@
     "push": "npm run push-live",
     "push-live": "scp ccatheme.css live:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/",
     "push-dev": "scp ccatheme.css dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/",
-    "cache-clear":  "ssh live 'cd /usr/share/acquia-drupal6; /Users/ephetteplace/drush/drush cc all -y"
+    "cc-live":  "ssh live 'cd /usr/share/acquia-drupal6; ~/drush/drush cc css-js -y'",
+    "cc-dev":  "ssh dev1 'cd /usr/share/acquia-drupal6; /usr/bin/drush cc css-js -y'"
   },
   "author": "phette23 <phette23@gmail.com> (http://phette.net/)",
   "license": "MIT"
