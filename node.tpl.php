@@ -76,7 +76,7 @@
     </div>
   <?php endif; ?>
 
-  <div class="content">
+  <div class="content clearfix">
     <?php print $content; ?>
   </div>
 
