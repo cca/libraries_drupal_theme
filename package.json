@@ -9,8 +9,8 @@
     "build": "sass --style compressed --sourcemap=none ccatheme.scss ccatheme.css",
     "clean": "rm *.map",
     "push": "npm run push-live",
-    "push-live": "scp ccatheme.css live:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/",
-    "push-dev": "scp ccatheme.css dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/",
+    "push-dev": "rsync --exclude-from exclude.txt --delete-excluded -rvz . dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/ ",
+    "push-live": "rsync --exclude-from exclude.txt --delete-excluded -rvz . dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/ ",
     "cc-live":  "ssh live 'cd /usr/share/acquia-drupal6; ~/drush/drush cc css-js -y'",
     "cc-dev":  "ssh dev1 'cd /usr/share/acquia-drupal6; /usr/bin/drush cc css-js -y'"
   },
