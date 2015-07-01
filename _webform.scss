@@ -1,0 +1,173 @@
+
+//WEBFORMS*/
+//style below broken out from ccatheme.scss line 1132
+//legend has no background, isn't 100% width, no border
+//override Bootstrap legend classes
+
+#webform-component-author, 
+#webform-component-title, 
+#webform-component-publisher, 
+#webform-component-year, 
+#webform-component-isbnissn, 
+#webform-component-format {
+  padding-left: 10px;
+}
+
+#webform-component-needed_for, 
+#webform-component-for_departmentcourse, 
+#webform-component-other_reason_for_recommendations {
+  padding: 1px 15px;
+  float: left;
+  width: 444px;
+}
+
+.form-item {
+  padding-left: 10px;
+}
+
+.description.mollom-privacy {
+  color: #666;
+  font-size: 11px;
+  padding-left: 25px;
+}
+
+#webform-component-needed-for {
+  border-top: 1px dashed #666;
+}
+
+#webform-component-your_name {
+	padding:1px 15px;
+	float:left;
+	width:440px;
+	min-height:80px;
+	border-top:1px solid #990000;
+	background:#ccc;
+	clear:both;
+}
+
+#webform-component-your_cca_affiliation,
+#webform-component-your_program {
+	padding:1px 10px;
+	float:left;
+	width:219px;
+	min-height:80px;
+	border-top:1px solid #990000;
+	background:#ccc;
+}
+
+#edit-submit {
+  border: 1px solid #072e99;
+  background: $lightGray;
+  color: #072e99;
+  padding: 3px;
+}
+
+#webform-client-form-71 
+#edit-submit {
+  margin: 15px 75px 15px 725px;
+}
+
+#webform-client-form-179 
+#edit-submit {
+  margin: 15px 75px 15px 600px;
+}
+
+#webform-client-form-71 {
+  border: 1px solid #990000;
+  background: $ccaTan;
+  margin-top: 5px;
+}
+
+#webform-component-course-and-contact-information  {
+  border: 1px solid #990000;
+  background: $ccaTan;
+  padding: 0 20px;
+}
+
+#webform-component-item-one {
+  border: 1px solid #990000;
+  //background: $lightGray;
+  //padding: 0 0px;
+}
+
+#webform-client-form-179 input[type="text"]{
+  width: 300px;
+}
+
+#webform-component-course_reserves_requested_for,
+#webform-component-semester,
+#webform-component-course_title,
+#webform-component-phone_number,
+#webform-component-author_1,
+#webform-component-title_1,
+#webform-component-check_out_length,
+#webform-component-email_addr  {
+  float: left;
+  width: 350px;
+}
+
+#webform-component-instructor,
+#webform-component-email_address,
+#webform-component-call_number_1 {
+  float: left;
+  width: 350px;
+  clear: both;
+}
+
+#webform-component-notes {
+  float: left;
+  width: 685px;
+  clear: both;
+}
+
+legend {
+  color: #990000;
+  margin-bottom:0px;
+  width:auto;
+  border:none;
+}
+
+#webform-component-item_two,
+#webform-component-item_three,
+#webform-component-item_four,
+#webform-component-item_five,
+#webform-component-item_six,
+#webform-component-item_seven,
+#webform-component-item_eight,
+#webform-component-item_nine,
+#webform-component-item_ten  {
+  background: $lightGray;
+  padding: 0 20px;
+}
+
+
+
+/*
+	Removes border from items on accordion drop down
+*/
+fieldset.collapsible legend a {
+  padding:0 5px 5px 0;
+  border-bottom: 1px dotted #072e99;
+}
+
+
+#webform-component-email_address {
+	padding:1px 15px;
+	float:left;
+	min-width:918px;
+	min-height:80px;
+	border-bottom:1px solid #990000;
+	background:#ccc;
+}
+
+.not-logged-in #webform-component-staff_only {
+  display: none;
+}
+
+.logged-in #webform-component-staff_only {
+  display: inline;
+  float: left;
+  margin: 25px;
+}
+
+//============end of webform
