@@ -1,5 +1,4 @@
-
-//WEBFORMS*/
+ccatheme.scss//WEBFORMS*/
 //style below broken out from ccatheme.scss line 1132
 //legend has no background, isn't 100% width, no border
 //override Bootstrap legend classes
@@ -12,7 +11,7 @@
 #webform-component-format {
   padding-left: 10px;
 }
-
+//ccatheme.scss
 #webform-component-needed_for, 
 #webform-component-for_departmentcourse, 
 #webform-component-other_reason_for_recommendations {
@@ -62,13 +61,11 @@
   padding: 3px;
 }
 
-#webform-client-form-71 
-#edit-submit {
+#webform-client-form-71 #edit-submit {
   margin: 15px 75px 15px 725px;
 }
 
-#webform-client-form-179 
-#edit-submit {
+#webform-client-form-179 #edit-submit {
   margin: 15px 75px 15px 600px;
 }
 
@@ -84,11 +81,19 @@
   padding: 0 20px;
 }
 
+
+/*  #webform-component-item-one {
+  border: 1px solid #990000;
+  background: $lightGray;
+  padding: 0 20px;
+}
+*/
+// ====================================== old code above new code below
 #webform-component-item-one {
   border: 1px solid #990000;
-  //background: $lightGray;
-  //padding: 0 0px;
 }
+
+
 
 #webform-client-form-179 input[type="text"]{
   width: 300px;
@@ -120,12 +125,24 @@
   clear: both;
 }
 
+
+
+/*
 legend {
   color: #990000;
-  margin-bottom:0px;
+}
+*/
+// ====================================== old code above new code below
+
+legend {
+  color: #990000;
+  margin-bottom:10px;
   width:auto;
   border:none;
 }
+
+
+
 
 #webform-component-item_two,
 #webform-component-item_three,
@@ -139,8 +156,6 @@ legend {
   background: $lightGray;
   padding: 0 20px;
 }
-
-
 
 /*
 	Removes border from items on accordion drop down
@@ -169,5 +184,3 @@ fieldset.collapsible legend a {
   float: left;
   margin: 25px;
 }
-
-//============end of webform

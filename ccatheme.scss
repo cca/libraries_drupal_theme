@@ -493,6 +493,13 @@ ul.links li {
 .with-navbar #content,
 .with-navbar #sidebar-left,
 .with-navbar #sidebar-right {
+  margin-top: 75px;
+}
+
+//to fix spacing issue
+#titlebanner {
+  clear: both;
+  padding: 7px 0;
   margin-top: 45px;
 }
 
@@ -1000,7 +1007,8 @@ li a.active {
 }
 
 /* Inline labels and form divs */
-.container-inline div, .container-inline label {
+.container-inline div, 
+.container-inline label {
   display: inline;
 }
 
@@ -1041,7 +1049,7 @@ li a.active {
 
 /* Drupal admin tables */
 /* We overrode these styles in html-elements.css, but restore them for the forms on the site. */
- form tbody {
+form tbody {
   border-top: 1px solid $lightGray;
 }
 
