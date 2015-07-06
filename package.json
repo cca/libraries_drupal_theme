@@ -10,7 +10,7 @@
     "clean": "rm *.map",
     "push": "npm run push-live",
     "push-dev": "rsync --exclude-from exclude.txt --delete-excluded -rvz . dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/ ",
-    "push-live": "rsync --exclude-from exclude.txt --delete-excluded -rvz . dev1:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/ ",
+    "push-live": "rsync --exclude-from exclude.txt --delete-excluded -rvz . live:/usr/share/acquia-drupal6/sites/all/themes/ccatheme/ ",
     "cc-live":  "ssh live 'cd /usr/share/acquia-drupal6; ~/drush/drush cc css-js -y'",
     "cc-dev":  "ssh dev1 'cd /usr/share/acquia-drupal6; /usr/bin/drush cc css-js -y'"
   },
