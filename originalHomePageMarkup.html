@@ -1,0 +1,296 @@
+<div class="search-wrapper col-md-8">
+  <ul class="nav nav-tabs" role="tablist">
+    <?php // hrefs must match a div.search-box class
+    ?>
+    <li class="active" onclick="_gaq.push(['_trackEvent', 'search', 'catalog', 'tab']);"><a href="#catalog">Library Catalog</a></li>
+    <li onclick="_gaq.push(['_trackEvent', 'search', 'articles', 'tab']);"><a href="#articles">Articles</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="search-box active catalog">
+      <h3>Search for books and other items on the libraries' shelves</h3>
+      <form role="form" name="search" method="get" action="http://library.cca.edu/search~S2/a?" onsubmit="_gaq.push(['_trackEvent', 'search', 'catalog', 'search']);" class="form-inline">
+        <?php
+        // keep width same for both <select>s
+        // makes tab switching look smoother
+        ?>
+        <select name="searchtype" class="form-control" style="width:8em;" onchange="_gaq.push(['_trackEvent', 'search', 'catalog', 'facet']);">
+          <option value="Y" selected>Keyword</option>
+          <option value="a">Author</option>
+          <option value="t">Title</option>
+          <option value="d">Subject</option>
+          <option value="c">Call number</option>
+          <option value="r">Course name</option>
+          <option value="p">Instructor</option>
+        </select>
+        <input class="form-control" type="text" name="searcharg" maxlength="75" value="">
+        <button class="btn btn-primary" type="submit">Find</button>
+        <input type="hidden" name="searchscope" value="1">
+        <input type="hidden" name="SORT" value="D">
+      </form>
+      <p>
+        <a href="http://library.cca.edu/search~S2/X" onclick="_gaq.push(['_trackEvent', 'search', 'catalog', 'advanced search']);">Advanced search &raquo;</a>
+      </p>
+    </div>
+
+    <div class="search-box hidden articles">
+      <h3>Search for articles in online library databases</h3>
+        <form role="form" action="https://proxy.cca.edu/form?qurl=http://EY7MR5FU9X.cs.serialssolutions.com/results" class="form-inline" name="searchForm" method="post" target="new" onsubmit="_gaq.push(['_trackEvent', 'search', 'articles', 'search']);">
+          <select class="form-control" name="field" style="width:8em;" onchange="_gaq.push(['_trackEvent', 'search', 'articles', 'facet']);">
+            <option value="author">Author</option>
+            <option value="keyword" selected="selected">Keyword</option>
+            <option value="title">Title</option>
+            <option value="issn">ISSN</option>
+            <option value="any">Any</option>
+          </select>
+          <input name="SS_LibHash" value="EY7MR5FU9X" type="hidden" />
+          <input name="locale" value="en-us" type="hidden" />
+          <input name="action" value="start" type="hidden" />
+          <input name="dbIDList" value="WAR,WOS,ILR,JAT,KCI,5OB,BSO,7QI,F29" type="hidden" />
+          <input class="form-control" class="col-md-6" value="" name="term" type="text" maxlength="1000" />
+          <button class="btn btn-primary" type="submit">Find</button>
+        </form>
+        <p>
+          <a href="https://proxy.cca.edu/login?url=http://ey7mr5fu9x.cs.serialssolutions.com/?SS_LibHash=EY7MR5FU9X&locale=en-us&searchBy=category&searchType=basic" onclick="_gaq.push(['_trackEvent', 'search', 'articles', 'advanced search']);">Advanced search &raquo;</a>
+        </p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+$('.nav-tabs li').click(function (ev) {
+  var $tab = $(this),
+    content = $tab.find('a').attr('href').replace('#', '.');
+
+  $('.nav-tabs li.active').removeClass('active');
+  $tab.removeClass('inactive').addClass('active');
+  $('.search-box').addClass('hidden');
+  $(content).removeClass('hidden');
+});
+
+// on page load—click tab indicated by hash
+var hash = location.hash.toString();
+
+if (hash) {
+  $('a[href="' + hash + '"]').parent('li').click();
+}
+}());
+</script>
+
+<?php // column 3 ?>
+<div id="home-column3">
+  <div id="services">
+        <h3>Quick links</h3>
+        <ul>
+            <li><a href="/info/hours">Hours</a> | <a href="mailto:refdesk@cca.edu?Subject=Ask a Librarian">Ask a Librarian</a> | <a href="/staff">Staff List</a></li>
+            <li><a href="https://docs.google.com/a/cca.edu/forms/d/1pyhf7krGP3PQX1McJIt1fwLUYAwUd88vGG1brC33qe8/viewform">Request an Inter-Library Loan</a></li>
+            <li><a href="http://library.cca.edu/patroninfo">Renew Books</a></li>
+            <li><a href="/content/recommend-acquisitions">Recommend a Purchase</a></li>
+            <li><a href="/content/course-reserves-request">Place Items on Course Reserve</a></li>
+        </ul>
+    </div>
+
+  <div id="home-news">
+    <h3>
+      <a href="blog">Library news &raquo;</a>
+    </h3>
+    <?php
+    // @todo this shouldn't be PHP
+  $listlength="3";
+  $nodetype="blog";
+  $output = node_title_list(db_query_range(db_rewrite_sql("SELECT n.nid, n.title, n.created FROM {node} n WHERE n.type = '%s' AND n.status = 1 ORDER BY n.created DESC"), $nodetype, 0, $listlength));
+  print $output;
+  ?>
+  </div>
+</div>
+<?php // end column 3 ?>
+
+<?php // begin column 1 ?>
+<div id="home-column">
+<?php // begin new books ?>
+<div id="newbooks">
+  <h3>
+    <a href="http://library.cca.edu/ftlist">New titles »</a>
+    <a href="/content/new-titles-email-signup" style="color:#990000;font-size:10px;">(sign-up for new title emails)</a>
+  </h3>
+  <div id="books">
+    <?php
+      // @TODO NO. FRICKIN. PHP!
+      $block = module_invoke('views', 'block', 'view', 'NewBooksBlock-block_1');
+      print $block['content'];
+    ?>
+  </div>
+</div>
+<?php // end new books block ?>
+</div>
+<?php //end column 1 ?>
+
+<?php //start column 2 ?>
+<div id="home-column">
+  <div id="home-resources">
+    <p>
+      Find <a href="/articles">articles</a> in journals, check for library <a href="http://ey7mr5fu9x.search.serialssolutions.com/">journal holdings</a> by journal title, browse a variety of <a href="/image-collections">image resources</a>.
+  </p>
+  <p>
+    <a class="btn btn-lg btn-default" href="/new-materials-lib">Check out the Materials Library</a>
+  </p>
+  </div>
+</div>
+<?php //end column 2 ?>
+
+<div id="tools" class="container">
+  <h3>Online Resources</h3>
+
+  <ul class="list-unstyled">
+    <div class="col-md-4">
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=asu" title="The definitive resource for the study of art and architecture; Art Source covers a broad range of subjects from fine, decorative, and commercial art relevant to architecture and architectural design">
+          <img src="/images/ebsco.gif" />
+          Art Source (EBSCOhost)
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://search.proquest.com/artbibliographies?accountid=30962"title="Provides citations and abstracts of journal articles, books, essays, exhibition catalogs, PhD dissertations, and exhibition reviews on modern and contemporary arts dating from the late 19th century to present day.">
+          <img src="/images/proquest.gif" width="16" height="16" />
+          Art Bibliographies Modern (ProQuest)
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://library.artstor.org" title="A digital library of more than one million images in the arts, architecture, humanities, and sciences with a set of tools to view, present, and manage images for teaching and research. The collections include contributions from international museums, photographers, libraries, scholars, photo archives, and artists - including CCA.">
+          <img src="/images/artstor.gif" />
+          ARTstor
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=bvh" title="The comprehensive American guide to current literature on architecture and design. The index covers international scholarly and popular periodical literature. ">
+          <img src="/images/ebsco.gif" />
+          Avery Index to Architecture Periodicals
+        </a>
+      </li>
+      <li>
+        <a href="http://www.getty.edu/research/tools/" title="Access the Getty Research Institute’s collections of images, art history texts, archival materials, research guides and bibliographies.">
+          <img src="/images/getty.gif" width="16" height="16" />
+          Getty Research Institute
+        </a>
+      </li>
+      <li>
+        <a href="http://buildinggreen.com" title="The online resource for reliable content on sustainable design strategies, green building materials, and case studies of high performance buildings. ">
+          <img src="/images/bldggreen.gif" />
+          Building Green
+        </a>
+      </li>
+      <li>
+        <a href="http://libraries.cca.edu/capp/" title="The Capp Street Project Archive documents the process, intention, and realization of installations and temporary projects sponsored by the Capp Street Project since 1983.">
+          <img src="/images/csp.gif" />
+          Capp St Project Archive
+        </a>
+      </li>
+    </div>
+
+    <div class="col-md-4">
+      <li>
+        <a href="https://vault.cca.edu/access/home.do">
+          <img src="/images/vault.jpg" />
+          CCA Vault
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://www.chicagomanualofstyle.org/" title="Online access to the full content of the 16th and 15th editions of the Chicago Manual of Style. Tools include manuscripts preparation, proofreading, and the Chicago-Style citation quick guide. ">
+          <img src="/images/chicago.gif" />
+          Chicago Manual of Style
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://search.proquest.com/daai?accountid=30962" title="A source of information for all aspects of design and crafts, from textiles and ceramics to vehicle design, advertising and sustainability. Provides citations and abstracts on items from 1973 to the present.">
+          <img src="/images/proquest.gif" width="16" height="16" />
+          Design &amp; Applied Arts Index (ProQuest)
+        </a>
+      </li>
+      <li>
+        <a href="https://proxy.cca.edu/login?url=http://academic.eb.com" title="The complete academic encyclopedia, related articles, images, and Merriam-Webster's Collegiate Dictionary.">
+          <img src="/images/eb.gif" />
+          Encyclopedia Britannica
+        </a>
+      </li>
+      <li>
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://www.jstor.org/search" title="Contains articles from hundreds of scholarly journals covering a wide range of subjects in the arts, humanities, sciences, and social sciences. ">
+            <img src="/images/jstor.gif" />
+            JSTOR
+          </a>
+        </li>
+
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://www.lexisnexis.com/hottopics/lnacademic/">
+            <img src="/images/lexisnexis.jpg" />
+            LexisNexis Academic
+          </a>
+        </li>
+
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://infotrac.galegroup.com/itweb/caliart?db=LitRC" title="Access to full text articles from scholarly journals and literary magazines are combined with critical essays, work and topic overviews, full-text works, and biographies providing a wealth of information on authors, their works, and literary movements.">
+            <img src="/images/lrc.gif" />
+            Literature Resource Center (Gale)
+          </a>
+        </li>
+        <li>
+          <a href="http://csul.iii.com/" Title="With a public library card, request books from libraries throughout California.">
+            <img src="/images/link_plus.png" />
+            Link+
+          </a>
+        </li>
+
+      </div>
+      <div class="col-md-4">
+        <li>
+          <a href="https://www.lynda.com/portal/cca" title="An online learning company that provides access to video tutorials that help you learn software, design, and business skills.">
+            <img src="/images/lynda.jpg" />
+            Lynda.com
+          </a>
+        </li>
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://library.materialconnexion.com/Home.aspx" title="Provides a global, cross-industry perspective on materials, sustainable alternatives, and their potential uses.">
+            <img src="/images/material.gif" />
+            Material Connexion
+          </a>
+        </li>
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=ofs" title="A full-text only database with material for research across all disciplines.">
+            <img src="/images/ebsco.gif" />
+            OmniFile Full Text (EBSCOhost)
+          </a>
+        </li>
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://www.oxfordartonline.com/subscriber/" title="The full-text of Grove Dictionary of Art and The Oxford Companion to Western Art, with thousands of images and continuously updated articles on major artists, periods, and styles.">
+            <img src="/images/oao.gif" />
+            Oxford Art Online
+          </a>
+        </li>
+        <li>
+          <a href="https://proxy.cca.edu/login?url=http://www.oed.com" title="A guide to the meaning, history, and pronunciation of 600,000 words from across the English-speaking world.">
+            <img src="/images/oed.gif" />
+            Oxford English Dictionary (OED)
+          </a>
+        </li>
+        <li>
+          <a href="http://learning.pronunciator.com/getstarted.php?library_id=7959" title="An interactive language-learning database with 80 languages. Provides ESL curriculum for 50 non-English languages. ">
+            <img src="/images/pronunciator.png" />
+            Pronunciator
+          </a>
+        </li>
+        <li>
+          <a href="http://www.source4style.com/" title="A global fabric sourcing platform - connecting creatives to search, sample, and source new materials from a curated network of suppliers. ">
+            <img src="/images/s4slogo.jpg" />
+            Source4Style
+          </a>
+        </li>
+        <li>
+          <a href="http://www.worldcat.org/" title="The world’s largest online library catalog. You can search for books, media, and digital content from participating libraries abound the world.">
+            <img src="/images/worldcat.gif"  width="16" height="16" />
+            Worldcat
+          </a>
+        </li>
+    </div>
+  </ul>
+</div>

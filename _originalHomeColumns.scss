@@ -1,0 +1,162 @@
+/*
+=============================================
+
+This is the original code taken from 
+ccatheme.scss aprx. line 1385. Code was then
+placed into _homeColumns.scss and redone.
+
+=============================================
+*/
+// home page columns
+#home-column {
+  display: inline;
+  float: left;
+  padding: 0;
+  margin: 0 5px 5px 5px;
+}
+
+#home-column3 {
+  display: inline;
+  float: right;
+  width: 300px;
+  padding: 0;
+  margin: 0 5px 5px 5px;
+}
+
+
+#newbooks,
+#services,
+#home-news,
+#home-resources {
+  display: inline;
+  float: left;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+//============================================= styles taken from home page source HTML addresses issue #4
+#home-resources {
+  width: 350px;
+}
+#home-resources .btn-default {
+  background-color: #ffe3d7;
+  border-color: #ffe3d7;
+  color: #ff6c2f; }
+#home-resources .btn-default:hover,
+#home-resources .btn-default:active {
+  background-color: #ff5a16;
+  border-color: #ff5a16;
+  color: #952c00; }
+//============================================= styles taken from home page source HTML issue #4
+#tools {
+  float: left;
+  width: 940px;
+  padding: 0;
+  border: 1px solid $lightGray;
+
+  h3 {
+    background: #eee;
+    border-bottom: 1px dotted $lightGray;
+    padding-left: 1em;
+    font-size: 13px;
+  }
+}
+
+#newbooks h3,
+#services h3,
+#tools h3,
+#home-news h3 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  padding: 4px;
+}
+
+#newbooks {
+  background-color: #fff;
+  border: 1px solid $lightBlue;
+  color: #333;
+  margin-bottom: 5px;
+  width: 250px;
+}
+
+#newbooks h3,
+#services h3,
+#home-news h3 {
+  background: #e0e4fe;
+  border-bottom: 1px dotted $lightBlue;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+#services,
+#home-news {
+  background-color: #fff;
+  border: 1px solid $lightBlue;
+  margin-bottom: 10px;
+}
+
+#home-news h3 a,
+#newbooks h3 a {
+  color: #333;
+  font-size: 13px;
+}
+
+#home-news .item-list {
+  width: 290px;
+  margin-top: 0;
+}
+
+#services ul li,
+#home-news .item-list ul li {
+  list-style-type: none;
+  margin: 7px 0;
+  font-size: 12px;
+  line-height: 21px;
+  border-bottom: 1px dotted #CAD5EA;
+}
+
+#services ul li strong a {
+  font-size: 12px;
+  color: #06277F;
+}
+
+#services ul li strong a:hover {
+  color: #666;
+}
+
+#newbooks #books {
+  text-align: center;
+}
+
+#newbooks a img {
+  text-decoration: none;
+  border: 1px solid $lightBlue;
+  margin: 0 1px 3px 1px;
+  padding: 5px;
+}
+
+#newbooks a:hover img {
+  background: $lightGray;
+  border: 1px solid #666;
+  padding: 5px;
+}
+
+#newbooks a,
+#services a,
+#tools a,
+#home-news a {
+  border: 0;
+}
+
+#home-resources p {
+  font-size:18px;
+  line-height:30px;
+  color:#666;
+  margin-top: 5px;
+}
+
+#home-resources a {
+  font-weight: bold;
+}
+
