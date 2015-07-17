@@ -602,6 +602,136 @@ fieldset.collapsible legend a {
   float: left;
   margin: 25px; }
 
+/*
+=============================================
+
+Styles were pulled from ccatheme.scss in
+order to address Issue #3 - less reliance
+on ID selectors. Also HTML was adjusted
+to incorporate Bootstrap classes.
+
+=============================================
+*/
+.home-column {
+  display: inline;
+  float: left;
+  padding: 0;
+  margin: 0 5px 5px 5px; }
+
+.home-column3 {
+  display: inline;
+  float: right;
+  width: 300px;
+  padding: 0;
+  margin: 0 5px 5px 5px; }
+
+.homeBlock {
+  display: inline;
+  float: left;
+  width: 300px;
+  text-align: left;
+  padding: 0;
+  margin: 0; }
+  .homeBlock h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding: 4px;
+    background: #e0e4fe;
+    border-bottom: 1px dotted #728bba;
+    padding-left: 10px;
+    font-size: 13px; }
+
+.home-resources {
+  width: 350px; }
+  .home-resources p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    margin-top: 5px; }
+  .home-resources a {
+    font-weight: bold; }
+
+.home-resources .btn-default {
+  background-color: #ffe3d7;
+  border-color: #ffe3d7;
+  color: #ff6c2f; }
+
+.home-resources .btn-default:hover,
+.home-resources .btn-default:active {
+  background-color: #ff5a16;
+  border-color: #ff5a16;
+  color: #952c00; }
+
+.tools {
+  float: left;
+  width: 940px;
+  padding: 0;
+  border: 1px solid #ccc; }
+  .tools h3 {
+    background: #eee;
+    border-bottom: 1px dotted #ccc;
+    padding-left: 1em;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding: 4px; }
+
+.newbooks {
+  background-color: #fff;
+  border: 1px solid #728bba;
+  color: #333;
+  margin-bottom: 5px;
+  width: 250px; }
+
+.services,
+.home-news {
+  background-color: #fff;
+  border: 1px solid #728bba;
+  margin-bottom: 10px; }
+  .services h3 a,
+  .home-news h3 a {
+    color: #333;
+    font-size: 13px; }
+
+.home-news .item-list {
+  width: 290px;
+  margin-top: 0; }
+
+.services ul li,
+.home-news .item-list ul li {
+  list-style-type: none;
+  margin: 7px 0;
+  font-size: 12px;
+  line-height: 21px;
+  border-bottom: 1px dotted #CAD5EA; }
+
+.services ul li strong a {
+  font-size: 12px;
+  color: #06277F; }
+
+.services ul li strong a:hover {
+  color: #666; }
+
+.newbooks .books {
+  text-align: center; }
+
+.newbooks a img {
+  text-decoration: none;
+  border: 1px solid #728bba;
+  margin: 0 1px 3px 1px;
+  padding: 5px; }
+
+.newbooks a:hover img {
+  background: #ccc;
+  border: 1px solid #666;
+  padding: 5px; }
+
+.newbooks h3 a,
+body .services a,
+body .tools a,
+body .home-news a {
+  border: 0; }
+
 a:link,
 a:visited,
 dt a {
@@ -798,9 +928,23 @@ blockquote {
   margin: 5px;
   margin-bottom: 10px;
   background-color: #fff;
-  border: 1px solid #eadfca; }
+  border: 1px solid #eadfca;
+  width: 95%; }
   .list-box ul li {
     list-style: none; }
+
+.list-box a {
+  /* @todo maybe belongs in main CSS */
+  font-size: 13px;
+  font-weight: bold; }
+
+.list-box a img {
+  float: left; }
+
+.list-box li {
+  line-height: 1.5;
+  margin: 6px 0 6px;
+  padding: 2px 0; }
 
 .list-box--red {
   border-color: #8b0000; }
@@ -1650,126 +1794,6 @@ ul.links.inline li.node_read_more a {
   margin-top: 1em;
   margin-left: 10px; }
 
-#home-column {
-  display: inline;
-  float: left;
-  padding: 0;
-  margin: 0 5px 5px 5px; }
-
-#home-column3 {
-  display: inline;
-  float: right;
-  width: 300px;
-  padding: 0;
-  margin: 0 5px 5px 5px; }
-
-#newbooks,
-#services,
-#home-news,
-#home-resources {
-  display: inline;
-  float: left;
-  width: 300px;
-  text-align: left;
-  padding: 0;
-  margin: 0; }
-
-#home-resources {
-  width: 350px; }
-
-#tools {
-  float: left;
-  width: 940px;
-  padding: 0;
-  border: 1px solid #ccc; }
-  #tools h3 {
-    background: #eee;
-    border-bottom: 1px dotted #ccc;
-    padding-left: 1em;
-    font-size: 13px; }
-
-#newbooks h3,
-#services h3,
-#tools h3,
-#home-news h3 {
-  font-weight: normal;
-  margin-bottom: 5px;
-  padding: 4px; }
-
-#newbooks {
-  background-color: #fff;
-  border: 1px solid #728bba;
-  color: #333;
-  margin-bottom: 5px;
-  width: 250px; }
-
-#newbooks h3,
-#services h3,
-#home-news h3 {
-  background: #e0e4fe;
-  border-bottom: 1px dotted #728bba;
-  padding-left: 10px;
-  font-size: 13px; }
-
-#services,
-#home-news {
-  background-color: #fff;
-  border: 1px solid #728bba;
-  margin-bottom: 10px; }
-
-#home-news h3 a,
-#newbooks h3 a {
-  color: #333;
-  font-size: 13px; }
-
-#home-news .item-list {
-  width: 290px;
-  margin-top: 0; }
-
-#services ul li,
-#home-news .item-list ul li {
-  list-style-type: none;
-  margin: 7px 0;
-  font-size: 12px;
-  line-height: 21px;
-  border-bottom: 1px dotted #CAD5EA; }
-
-#services ul li strong a {
-  font-size: 12px;
-  color: #06277F; }
-
-#services ul li strong a:hover {
-  color: #666; }
-
-#newbooks #books {
-  text-align: center; }
-
-#newbooks a img {
-  text-decoration: none;
-  border: 1px solid #728bba;
-  margin: 0 1px 3px 1px;
-  padding: 5px; }
-
-#newbooks a:hover img {
-  background: #ccc;
-  border: 1px solid #666;
-  padding: 5px; }
-
-#newbooks a,
-#services a,
-#tools a,
-#home-news a {
-  border: 0; }
-
-#home-resources p {
-  font-size: 18px;
-  line-height: 30px;
-  color: #666;
-  margin-top: 5px; }
-
-#home-resources a {
-  font-weight: bold; }
-
 #sidebar-left .block ul li,
 #sidebar-right .block ul li {
   font-size: 11px;
@@ -1827,6 +1851,80 @@ div.feedEntryContent div.millennium.coverimage img[class*='isbn-'] {
 #feedTitleImage {
   width: 90px;
   height: 130px; }
+
+/*=======================
+
+Styling for SF and Oak hours
+
+=======================*/
+.hours {
+  margin: 0px 0px 10px 20px;
+  border: 1px solid #777;
+  padding: 0px;
+  background-color: #eee; }
+
+.hours td,
+.hours th {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  font-family: 'lucida grande', verdana;
+  font-size: 12px; }
+
+.hours td[scope=column] {
+  color: #072e99;
+  padding-left: 5px;
+  text-align: left;
+  border-bottom: 1px solid #777;
+  font-weight: bold;
+  background-color: #ddd;
+  width: 240px; }
+
+em {
+  color: #990000; }
+
+.sf,
+.oak,
+.sfHours,
+.oakHours {
+  float: left; }
+
+.sf,
+.oak {
+  width: 190px; }
+
+.sfHours,
+.oakHours {
+  width: 550px;
+  margin-bottom: 10px; }
+
+.sf,
+.sfHours {
+  background-color: #fff;
+  padding: 5px 5px 5px 0px; }
+
+.oak,
+.oakHours {
+  background-color: #eadfca;
+  padding: 5px 5px 5px 0px;
+  min-height: 110px; }
+
+.sfHours p,
+.oakHours p {
+  padding: 0px 20px; }
+
+.sf h3,
+.oak h3,
+.sf p,
+.oak p {
+  color: #06277F; }
+
+.oak h3,
+.sf h3 {
+  font-size: 14px; }
+
+table.break {
+  background-color: #daeae4; }
 
 .btn {
   border-radius: 0; }
