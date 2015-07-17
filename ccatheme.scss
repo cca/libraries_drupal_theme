@@ -53,52 +53,11 @@ a:hover {
   border-bottom: 1px dotted #666;
 }
 
-a img, 
+a img,
 a img:hover {
   border: none;
-  background: white;
+  background: #fff;
   text-decoration: none;
-}
-
-// ********** EXPERIMENTAL - DEVELOPMENT IN PROCESS***************
-
-// -----New Materials Library and Company content type submission form styling------
-
-body.not-front.not-logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed div.terms.terms-inline,
-body.not-front.logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed.admin-menu div.terms.terms-inline {
-  display: block;
-  position: absolute;
-  top: 250px;
-  left: 350px;
-  border: 1px solid rgb(169, 169, 169);
-  margin: 10px 16px 10px 10px !important;
-  padding: 4px;
-  width: 500px;
-}
-
-div.field.field-type-text.field-field-sample-desc {
-  display: block;
-  position: absolute;
-  top: 100px;
-  left: 350px;
-  border: 1px solid rgb(169, 169, 169);
-  margin: 10px 16px 10px 10px !important;
-  padding: 4px;
-  width: 500px;
-}
-
-div.field.field-type-link.field-field-company-url {
-  float: left;
-}
-
-div.field.field-type-nodereference.field-field-company-lookup div.field-items div.field-item.odd {
-  display: inline;
-}
-
-div[id^='node-'].node.node-teaser.node-type-mat-company h2.title,
-div[id^='node-'].node.node-mine.node-teaser.node-type-mat-company h2.title {
-  font-size: 14px;
-  padding: 0;
 }
 
 ul.menu li,
@@ -603,7 +562,7 @@ ul.links li {
 .node-inner {
 }
 
-/* A sticky node (displayed before others in a list) */ 
+/* A sticky node (displayed before others in a list) */
 .sticky {
 }
 
@@ -639,7 +598,7 @@ ul.links li {
  * content that it is. If you create a new content type called
  * "my-custom-type", it will receive a "node-type-my-custom-type" class.
  */
- 
+
  /* Page content node */
  .node-type-page {
  }
@@ -965,7 +924,7 @@ tr.even {
 
 /* background-color: #eee; */ /* Drupal core uses a #eee background */
 tr.odd {
-  
+
 }
 
 /* The active item in a Drupal menu */
@@ -977,7 +936,7 @@ li a.active {
 //* Drupal forms **/
 
 /* Wrapper for a form element (or group of form elements) and its label */
-.form-item, 
+.form-item,
 .form-checkboxes,
 .form-radios {
   margin: 1em 0;
@@ -1023,7 +982,7 @@ li a.active {
 }
 
 /* Inline labels and form divs */
-.container-inline div, 
+.container-inline div,
 .container-inline label {
   display: inline;
 }
@@ -1470,7 +1429,7 @@ Styling for SF and Oak hours
 	background-color: #eee;
 }
 
-.hours td, 
+.hours td,
 .hours th {
 	width: 60px;
 	padding: 5px;
