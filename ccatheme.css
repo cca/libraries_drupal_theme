@@ -236,11 +236,6 @@ body {
 #page {
   /* * To use a 12px font size on the page, delete the 14px declarations.
   * to use a 14px font size on the page, delete the 12px declarations. */
-  /* Use a 12px base font size with a 16px line height */
-  font-size: 0.75em;
-  /* 16px x .75 = 12px */
-  line-height: 1.333em;
-  /* 12px x 1.333 = 16px */
   /* Use a 14px base font size with a 18px line height */
   font-size: 0.875em;
   /* 16px x .875 = 14px */
@@ -567,18 +562,6 @@ legend {
   width: auto;
   border: none; }
 
-#webform-component-item_two,
-#webform-component-item_three,
-#webform-component-item_four,
-#webform-component-item_five,
-#webform-component-item_six,
-#webform-component-item_seven,
-#webform-component-item_eight,
-#webform-component-item_nine,
-#webform-component-item_ten {
-  background: #ccc;
-  padding: 0 20px; }
-
 /*
 	Removes border from items on accordion drop down
 */
@@ -750,40 +733,8 @@ a:hover {
 a img,
 a img:hover {
   border: none;
-  background: white;
+  background: #fff;
   text-decoration: none; }
-
-body.not-front.not-logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed div.terms.terms-inline,
-body.not-front.logged-in.node-type-nml-sample.no-sidebars[class*='page-content-'].section-content.lightbox-processed.admin-menu div.terms.terms-inline {
-  display: block;
-  position: absolute;
-  top: 250px;
-  left: 350px;
-  border: 1px solid darkgray;
-  margin: 10px 16px 10px 10px !important;
-  padding: 4px;
-  width: 500px; }
-
-div.field.field-type-text.field-field-sample-desc {
-  display: block;
-  position: absolute;
-  top: 100px;
-  left: 350px;
-  border: 1px solid darkgray;
-  margin: 10px 16px 10px 10px !important;
-  padding: 4px;
-  width: 500px; }
-
-div.field.field-type-link.field-field-company-url {
-  float: left; }
-
-div.field.field-type-nodereference.field-field-company-lookup div.field-items div.field-item.odd {
-  display: inline; }
-
-div[id^='node-'].node.node-teaser.node-type-mat-company h2.title,
-div[id^='node-'].node.node-mine.node-teaser.node-type-mat-company h2.title {
-  font-size: 14px;
-  padding: 0; }
 
 ul.menu li,
 div.content,
@@ -1801,7 +1752,6 @@ ul.links.inline li.node_read_more a {
 
 #content-bottom .block-inner {
   float: left;
-  background: #eee;
   border: 1px solid #777;
   width: 920px;
   padding: 10px;
