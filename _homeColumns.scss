@@ -9,129 +9,149 @@ to incorporate Bootstrap classes.
 =============================================
 */
 .home-column {
-  display: inline;
-  float: left;
-  padding: 0;
-  margin: 0 5px 5px 5px;
+    display: inline;
+    float: left;
+    margin: 0 5px 5px;
+    padding: 0;
 }
+
 .home-column3 {
-  display: inline;
-  float: right;
-  width: 300px;
-  padding: 0;
-  margin: 0 5px 5px 5px;
+    display: inline;
+    float: right;
+    margin: 0 5px 5px;
+    padding: 0;
+    width: 300px;
 }
-.homeBlock { //used to be .newbooks, .services, .home-news, .home-resources
-  display: inline;
-  float: left;
-  width: 300px;
-  text-align: left;
-  padding: 0;
-  margin: 0;
+
+.homeBlock { // used to be .newbooks, .services, .home-news, .home-resources
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 300px;
 
     h3 {
-      font-weight: normal;
-      margin-bottom: 5px;
-      padding: 4px;
-      background: #e0e4fe;
-      border-bottom: 1px dotted $lightBlue;
-      padding-left: 10px;
-      font-size: 13px;
+        background: #e0e4fe;
+        border-bottom: 1px dotted $lightBlue;
+        font-size: 13px;
+        font-weight: normal;
+        margin-bottom: 5px;
+        padding: 4px;
+        padding-left: 10px;
     }
 }
+
 .home-resources {
-  width: 350px;
+    width: 350px;
 
     p {
-      font-size:18px;
-      line-height:30px;
-      color:#666;
-      margin-top: 5px;
+        color:#666;
+        font-size:18px;
+        line-height:30px;
+        margin-top: 5px;
     }
 
     a {
-      font-weight: bold;
+        font-weight: bold;
     }
 }
+
 .home-resources .btn-default {
-  background-color: #ffe3d7;
-  border-color: #ffe3d7;
-  color: #ff6c2f; }
+    background-color: #ffe3d7;
+    border-color: #ffe3d7;
+    color: #ff6c2f;
+}
+
 .home-resources .btn-default:hover,
 .home-resources .btn-default:active {
-  background-color: #ff5a16;
-  border-color: #ff5a16;
-  color: #952c00; }
+    background-color: #ff5a16;
+    border-color: #ff5a16;
+    color: #952c00;
+}
+
 .tools {
-  float: left;
-  width: 940px;
-  padding: 0;
-  border: 1px solid $lightGray;
+    border: 1px solid $lightGray;
+    float: left;
+    padding: 0;
+    width: 940px;
 
     h3 {
-      background: #eee;
-      border-bottom: 1px dotted $lightGray;
-      padding-left: 1em;
-      font-size: 13px;
-      font-weight: normal;
-      margin-bottom: 5px;
-      padding: 4px;
+        background: #eee;
+        border-bottom: 1px dotted $lightGray;
+        font-size: 13px;
+        font-weight: normal;
+        margin-bottom: 5px;
+        padding: 4px;
+        padding-left: 1em;
     }
 }
+
 .newbooks {
-  background-color: #fff;
-  border: 1px solid $lightBlue;
-  color: #333;
-  margin-bottom: 5px;
-  width: 250px;
+    background-color: #fff;
+    border: 1px solid $lightBlue;
+    color: #333;
+    margin-bottom: 5px;
+    width: 250px;
+
+    .books {
+        text-align: center;
+    }
+
+    a img {
+        border: 1px solid $lightBlue;
+        margin: 0 1px 3px;
+        // fits 2 max-sized cover images in the block
+        max-width: 48%;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    a:hover img {
+        background: $lightGray;
+        border: 1px solid #666;
+        padding: 5px;
+    }
 }
+
 .services,
 .home-news {
-  background-color: #fff;
-  border: 1px solid $lightBlue;
-  margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid $lightBlue;
+    margin-bottom: 10px;
 
     h3 a {
-      color: #333;
-      font-size: 13px;
+        color: #333;
+        font-size: 13px;
     }
 }
+
 .home-news .item-list {
-  width: 290px;
-  margin-top: 0;
+    margin-top: 0;
+    width: 290px;
 }
+
 .services ul li,
 .home-news .item-list ul li {
-  list-style-type: none;
-  margin: 7px 0;
-  font-size: 12px;
-  line-height: 21px;
-  border-bottom: 1px dotted #CAD5EA;
+    border-bottom: 1px dotted #CAD5EA;
+    font-size: 12px;
+    line-height: 21px;
+    list-style-type: none;
+    margin: 7px 0;
 }
+
 .services ul li strong a {
-  font-size: 12px;
-  color: #06277F;
+    color: #06277F;
+    font-size: 12px;
 }
+
 .services ul li strong a:hover {
-  color: #666;
+    color: #666;
 }
-.newbooks .books {
-  text-align: center;
-}
-.newbooks a img {
-  text-decoration: none;
-  border: 1px solid $lightBlue;
-  margin: 0 1px 3px 1px;
-  padding: 5px;
-}
-.newbooks a:hover img {
-  background: $lightGray;
-  border: 1px solid #666;
-  padding: 5px;
-}
+
 .newbooks h3 a,
 body .services a,
 body .tools a,
 body .home-news a {
-  border: 0;
+    border: 0;
 }
