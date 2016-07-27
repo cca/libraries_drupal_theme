@@ -1,3 +1,4 @@
+.ackrc
 .git
 .sass-cache
 package.json
