@@ -1,12 +1,14 @@
 // import reusable vars, mixins, etc.
-@import '_colors';
+@import 'colors';
 // other styles based on ZEN
-@import '_layout';
-@import '_html-elements';
+@import 'layout';
+@import 'html-elements';
 // styles for Course reserve request webform
-@import '_webform';
+@import 'webform';
 //styles for blocks of content on the home page
-@import '_homeColumns';
+@import 'homeColumns';
+// main menu
+@import 'nice-menu';
 
 a:link,
 a:visited,
@@ -1017,107 +1019,17 @@ form thead th {
   border-bottom: 3px solid $lightGray;
 }
 
-// NICE MENUS */
-#nice-menu-1 li ul li ul li {
-  display: none;
-}
-
-ul.nice-menu,
-ul.nice-menu ul {
-  color: $darkGray;
-  background: $ccaTan;
-}
-
-ul.nice-menu li,
-ul.nice-menu-down li ul li {
-  color: $darkGray;
-  background: $ccaTan;
-  width: 160px; // makes menu width = #header width
-  padding-right: 0;
-  font-size: 11px;
-}
-
-ul.nice-menu a {
-  color: $darkGray;
-  background: $ccaTan;
-  text-decoration: none;
-  padding-right: 0;
-  text-align: center;
-}
-
-ul.nice-menu a:hover {
-  color: #fff;
-  background: #968668;
-  text-decoration: none;
-  padding-right: 0;
-}
-
-ul.nice-menu-down li,
-ul.nice-menu li {
-  border: 1px solid #b8a47f;
-  padding-right: 0;
-}
-
-ul.nice-menu-down li.menuparent,
-ul.nice-menu-down li.menuparent ul li,
-#header-region ul.nice-menu-down li.menuparent {
-  background: none;
-  padding-right: 0;
-}
-
-ul.nice-menu-down .menuparent a {
-  padding-right: 0;
-  background: none;
-}
-
-ul.nice-menu-down li.menuparent,
-// Repeat for Garland header. */
-// @todo is there a reason why we're repeating styles
-// for a theme we're not using?
-#header-region ul.nice-menu-down li.menuparent {
-  background: none;
-  padding-right: 0;
-}
-
-ul.nice-menu-down li.menuparent:hover,
-ul.nice-menu-down li.over,
-ul.nice-menu-down li:hover,
-ul.nice-menu-down li ul li:hover,
-// Repeat for Garland header. */
-#header-region ul.nice-menu-down li.menuparent:hover,
-#header-region ul.nice-menu-down li.over {
-  background: #968668;
-  padding-right: 0;
-}
-
-ul.nice-menu-down li li.menuparent,
-// Repeat for Garland header. */
-#header-region ul.nice-menu-down li li.menuparent {
-  background: none;
-  padding-right: 0;
-}
-
-ul.nice-menu-down li li.menuparent:hover,
-ul.nice-menu-down li li.over,
-ul.nice-menu-down li ul li a:hover,
-// Repeat for Garland header. */
-#header-region ul.nice-menu-down li li.menuparent:hover,
-#header-region ul.nice-menu-down li li.over {
-  background: #968668;
-  padding-right: 0;
-}
-
 #menu-568 {
   font-weight: bold;
 }
 
-
-//GOOGLE DOCS IFRAMES*/
+// GOOGLE DOCS IFRAMES
 iframe#googledocs {
   padding: 5px;
   overflow: visible;
 }
-//STAFF PAGE*/
+
+// STAFF PAGE
 .views-view-grid .col-1 {
   min-width: 600px;
 }
@@ -1182,7 +1094,7 @@ iframe#googledocs {
   visibility: visible;
 }
 
-//BLOG*/
+// BLOG
 .node-type-blog .node-inner .content img {
   float: left;
   display: inline;
@@ -1316,7 +1228,7 @@ ul.links.inline li.node_read_more a {
   margin-left: 10px;
 }
 
-//SIDEBARS */
+// SIDEBARS
 #sidebar-left .block ul li,
 #sidebar-right .block ul li {
   font-size: 11px;
@@ -1325,7 +1237,6 @@ ul.links.inline li.node_read_more a {
 
 #content-bottom .block-inner {
   float: left;
-  //background: #eee;
   border: 1px solid #777;
   width: 920px;
   padding: 10px;
@@ -1372,7 +1283,7 @@ fieldset div.picture {
   display: none;
 }
 
-//RSS feed styling*/
+// RSS feed styling
 div.feedEntryContent div.millennium.coverimage img[class*='isbn-'] {
   width:90px;
   height:130px;

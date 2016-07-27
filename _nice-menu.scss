@@ -1,0 +1,94 @@
+// NICE MENUS
+
+// define colors
+$darkTan: #b8a47f;
+
+// don't display links three levels deep in main menu
+#nice-menu-1 li ul li ul li {
+    display: none;
+}
+
+ul.nice-menu {
+    background: $ccaTan;
+    color: $darkGray;
+
+    a {
+        color: $darkGray;
+        background: $ccaTan;
+        text-decoration: none;
+        padding-right: 0;
+        text-align: center;
+
+        &:hover {
+            background: #968668;
+            color: $white;
+            padding-right: 0;
+            text-decoration: none;
+        }
+    }
+
+    li {
+        border: 1px solid $darkTan;
+        color: $darkGray;
+        background: $ccaTan;
+        width: 160px; // makes menu width = #header width
+        padding-right: 0;
+        font-size: 11px;
+    }
+
+    ul {
+        background: $ccaTan;
+        color: $darkGray;
+    }
+}
+
+ul.nice-menu-down {
+    li {
+        border: 1px solid $darkTan;
+        padding-right: 0;
+    }
+
+    li ul li {
+        color: $darkGray;
+        background: $ccaTan;
+        width: 160px; // makes menu width = #header width
+        padding-right: 0;
+        font-size: 11px;
+    }
+}
+
+ul.nice-menu-down li.menuparent,
+ul.nice-menu-down li.menuparent ul li {
+    background: none;
+    padding-right: 0;
+}
+
+ul.nice-menu-down .menuparent a {
+    background: none;
+    padding-right: 0;
+}
+
+ul.nice-menu-down li.menuparent {
+    background: none;
+    padding-right: 0;
+}
+
+ul.nice-menu-down li.menuparent:hover,
+ul.nice-menu-down li.over,
+ul.nice-menu-down li:hover,
+ul.nice-menu-down li ul li:hover {
+    background: #968668;
+    padding-right: 0;
+}
+
+ul.nice-menu-down li li.menuparent {
+    background: none;
+    padding-right: 0;
+}
+
+ul.nice-menu-down li li.menuparent:hover,
+ul.nice-menu-down li li.over,
+ul.nice-menu-down li ul li a:hover {
+    background: #968668;
+    padding-right: 0;
+}
