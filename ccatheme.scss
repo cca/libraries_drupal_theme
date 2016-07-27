@@ -9,6 +9,7 @@
 @import 'homeColumns';
 // main menu
 @import 'nice-menu';
+@import 'footer';
 
 a:link,
 a:visited,
@@ -290,31 +291,6 @@ blockquote {
   border: 1px dashed $lightGray;
 }
 
-// links in footer
-// virtually none of these styles are necessary
-#ccalinks {
-  float: left;
-  width: 950px;
-  color: #666;
-  font-size: 12px;
-  background-color: $ccaTan;
-  text-align: right;
-  padding: 3px 10px 3px 3px;
-  margin: 3px 0;
-  border: 1px dotted #b8a47f;
-
-  a {
-    border: none;
-    color: #444;
-
-    &:hover {
-      background-color: #968668;
-      color: #fff;
-      text-decoration: none;
-    }
-  }
-}
-
 @import '_mllm';
 
 //* SPECIAL *
@@ -481,44 +457,9 @@ ul.links li {
  min-height: 250px;
 }
 
-#sidebar-right-inner
-{
-}
-
 #sidebar-left h2,
 #sidebar-right h2 {
   font-size: 1.1em;
-}
-
-//* footer **/
-#footer {
-  color: #777;
-  font-size: 11px;
-  text-align: center;
-  margin: 0;
-  line-height: 17px;
-
-  #simpson {
-    color: #968668;
-    padding-left: 4px;
-  }
-
-  img {
-    padding: 0;
-    vertical-align: middle;
-    float: right;
-  }
-
-  a {
-    border: 0;
-  }
-}
-
-#footer-message {
-  display: inline;
-  float: left;
-  text-align: center;
-  width: 960px;
 }
 
 //* closure **/
