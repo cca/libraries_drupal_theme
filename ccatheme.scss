@@ -1226,13 +1226,13 @@ fieldset div.picture {
 
 // RSS feed styling
 div.feedEntryContent div.millennium.coverimage img[class*='isbn-'] {
-  width:90px;
-  height:130px;
+  width: 90px;
+  height: 130px;
 }
 
 #feedTitleImage {
-  width:90px;
-  height:130px;
+  width: 90px;
+  height: 130px;
 }
 
 /*=======================
@@ -1316,11 +1316,11 @@ em {
 
 .oak h3,
 .sf h3{
-font-size: 14px;
+    font-size: 14px;
 }
 
 table.break {
-background-color: #daeae4;
+    background-color: #daeae4;
 }
 
 // override select pieces of Bootstrap
