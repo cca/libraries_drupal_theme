@@ -1,6 +1,7 @@
 // NICE MENUS
 
 // define colors
+$brown: #968668;
 $darkTan: #b8a47f;
 
 // don't display links three levels deep in main menu
@@ -20,7 +21,7 @@ ul.nice-menu {
         text-align: center;
 
         &:hover {
-            background: #968668;
+            background: $brown;
             color: $white;
             padding-right: 0;
             text-decoration: none;
@@ -77,7 +78,7 @@ ul.nice-menu-down li.menuparent:hover,
 ul.nice-menu-down li.over,
 ul.nice-menu-down li:hover,
 ul.nice-menu-down li ul li:hover {
-    background: #968668;
+    background: $brown;
     padding-right: 0;
 }
 
@@ -89,6 +90,6 @@ ul.nice-menu-down li li.menuparent {
 ul.nice-menu-down li li.menuparent:hover,
 ul.nice-menu-down li li.over,
 ul.nice-menu-down li ul li a:hover {
-    background: #968668;
+    background: $brown;
     padding-right: 0;
 }
