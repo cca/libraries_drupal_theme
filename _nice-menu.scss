@@ -15,7 +15,7 @@ ul.nice-menu {
         text-align: center;
 
         &:hover {
-            background: $darkGray;
+            background: $midGray;
             color: $white;
         }
     }
@@ -26,17 +26,17 @@ ul.nice-menu {
 
     li {
         background: $faintGray;
-        border: 1px solid $darkGray;
+        border: 1px solid $lightGray;
         border-right: 0;
         width: 160px; // makes menu width = #header width
 
         &:last-child {
-            border-right: 1px solid $darkGray;
+            border-right: 1px solid $lightGray;
         }
 
         ul li {
             background: #eee !important; // screw it, I can't get this to work with !imp
-            border-right: 1px solid $darkGray;
+            border-right: 1px solid $lightGray;
             color: $darkGray;
             // necessary to make sub-menu items same width as upper levels
             left: -1px;
@@ -61,7 +61,7 @@ ul.nice-menu {
         li.menuparent:hover,
         li.over,
         ul li a:hover {
-            background: $darkGray;
+            background: $midGray;
         }
     }
 
