@@ -1,156 +1,66 @@
-/*
-=============================================
-
-Styles were pulled from ccatheme.scss in
-order to address Issue #3 - less reliance
-on ID selectors. Also HTML was adjusted
-to incorporate Bootstrap classes.
-
-=============================================
-*/
-.home-column {
-    display: inline;
-    float: left;
-    margin: 0 5px 5px;
-    padding: 0;
-}
-
-.home-column3 {
-    display: inline;
-    float: right;
-    margin: 0 5px 5px;
-    padding: 0;
-    width: 300px;
-}
-
-.homeBlock { // used to be .newbooks, .services, .home-news, .home-resources
-    display: inline;
-    float: left;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    width: 300px;
-
-    h3 {
-        background: #e0e4fe;
-        border-bottom: 1px dotted $lightBlue;
-        font-size: 13px;
-        font-weight: normal;
-        margin-bottom: 5px;
-        padding: 4px;
-        padding-left: 10px;
-    }
-}
-
-.home-resources {
-    width: 350px;
-
-    p {
-        color:#666;
-        font-size:18px;
-        line-height:30px;
-        margin-top: 5px;
-    }
-
-    a {
-        font-weight: bold;
-    }
-}
-
-.home-resources .btn-default {
-    background-color: #ffe3d7;
-    border-color: #ffe3d7;
-    color: #ff6c2f;
-}
-
-.home-resources .btn-default:hover,
-.home-resources .btn-default:active {
-    background-color: #ff5a16;
-    border-color: #ff5a16;
-    color: #952c00;
-}
-
-.tools {
+// all blocks on the home page, "quick links", "news", "new items"
+.homeBlock {
     border: 1px solid $lightGray;
+    display: inline;
     float: left;
+    margin-bottom: 2em;
+    // override bootstrap column padding so <h3> stretches across whole <div>
     padding: 0;
 
     h3 {
-        background: #eee;
+        background: $faintGray;
         border-bottom: 1px dotted $lightGray;
+        color: $darkGray;
         font-size: 13px;
         font-weight: normal;
         margin-bottom: 5px;
         padding: 4px;
         padding-left: 1em;
+
+        a {
+            color: $darkGray;
+        }
+    }
+
+    // lists in news, quick link, online resources blocks
+    ul {
+        margin-right: 10px;
+
+        li {
+            border-bottom: 1px dotted $lightGray;
+            line-height: 21px;
+            list-style-type: none;
+            margin: 7px 0;
+        }
     }
 }
 
-.newbooks {
-    background-color: #fff;
-    border: 1px solid $lightBlue;
-    color: #333;
-    margin-bottom: 5px;
-    width: 250px;
-
-    .books {
-        text-align: center;
-    }
-
-    a img {
-        border: 1px solid $lightBlue;
-        margin: 0 1px 3px;
-        // fits 2 max-sized cover images in the block
-        max-width: 48%;
-        padding: 5px;
-        text-decoration: none;
-    }
-
-    a:hover img {
-        background: $lightGray;
-        border: 1px solid #666;
-        padding: 5px;
-    }
-}
-
-.services,
-.home-news {
-    background-color: #fff;
-    border: 1px solid $lightBlue;
-    margin-bottom: 10px;
-
-    h3 a {
-        color: #333;
-        font-size: 13px;
-    }
-}
-
-.home-news .item-list {
-    margin-top: 0;
-    width: 290px;
-}
-
-.services ul li,
-.home-news .item-list ul li {
-    border-bottom: 1px dotted #CAD5EA;
-    font-size: 12px;
-    line-height: 21px;
-    list-style-type: none;
-    margin: 7px 0;
-}
-
-.services ul li strong a {
-    color: #06277F;
-    font-size: 12px;
-}
-
-.services ul li strong a:hover {
-    color: #666;
-}
-
-.newbooks h3 a,
-body .services a,
-body .tools a,
-body .home-news a {
+// <body> needed for specificity
+body .homeBlock a {
     border: 0;
+}
+
+// book/other item cover images
+.titles {
+    text-align: center;
+
+    > div {
+        margin-bottom: 1em;
+    }
+
+    .cover-img {
+        background-position: center;
+        background-size: cover;
+        height: 180px;
+        position: relative;
+
+        p {
+            background-color: rgba(0, 0, 0, 0.6);
+            bottom: 0;
+            color: $white;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+        }
+    }
 }

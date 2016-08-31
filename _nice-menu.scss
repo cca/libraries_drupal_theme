@@ -1,94 +1,71 @@
-// NICE MENUS
+// main horizontal navigation menu
+// markup comes from Drupal's "Nice Menus" module
 
-// define colors
-$darkTan: #b8a47f;
-
-// don't display links three levels deep in main menu
-#nice-menu-1 li ul li ul li {
-    display: none;
-}
+// color scheme summary:
+// background - $faintGray
+// font color - $darkGray
+// on hover background - $darkGray
+// on hover font color - $white
 
 ul.nice-menu {
-    background: $ccaTan;
-    color: $darkGray;
+    background: $faintGray;
 
     a {
         color: $darkGray;
-        background: $ccaTan;
-        text-decoration: none;
-        padding-right: 0;
         text-align: center;
 
         &:hover {
-            background: #968668;
+            background: $midGray;
             color: $white;
-            padding-right: 0;
-            text-decoration: none;
         }
     }
 
-    li {
-        border: 1px solid $darkTan;
-        color: $darkGray;
-        background: $ccaTan;
-        width: 160px; // makes menu width = #header width
-        padding-right: 0;
-        font-size: 11px;
-    }
-
     ul {
-        background: $ccaTan;
-        color: $darkGray;
+        border: 0;
     }
-}
 
-ul.nice-menu-down {
     li {
-        border: 1px solid $darkTan;
-        padding-right: 0;
-    }
-
-    li ul li {
-        color: $darkGray;
-        background: $ccaTan;
+        background: $faintGray;
+        border: 1px solid $lightGray;
+        border-right: 0;
         width: 160px; // makes menu width = #header width
-        padding-right: 0;
-        font-size: 11px;
+
+        &:last-child {
+            border-right: 1px solid $lightGray;
+        }
+
+        ul li {
+            background: #eee !important; // screw it, I can't get this to work with !imp
+            border-right: 1px solid $lightGray;
+            color: $darkGray;
+            // necessary to make sub-menu items same width as upper levels
+            left: -1px;
+            width: 161px;
+        }
+
+        // top-level menu link when _open_ but not hovered over
+        &.over > a {
+            color: $white;
+        }
+
+        &.menuparent,
+        &.menuparent ul li,
+        li.menuparent {
+            background: none;
+        }
+
+        &.menuparent:hover,
+        &.over,
+        &:hover,
+        li ul li:hover,
+        li.menuparent:hover,
+        li.over,
+        ul li a:hover {
+            background: $midGray;
+        }
     }
-}
 
-ul.nice-menu-down li.menuparent,
-ul.nice-menu-down li.menuparent ul li {
-    background: none;
-    padding-right: 0;
-}
-
-ul.nice-menu-down .menuparent a {
-    background: none;
-    padding-right: 0;
-}
-
-ul.nice-menu-down li.menuparent {
-    background: none;
-    padding-right: 0;
-}
-
-ul.nice-menu-down li.menuparent:hover,
-ul.nice-menu-down li.over,
-ul.nice-menu-down li:hover,
-ul.nice-menu-down li ul li:hover {
-    background: #968668;
-    padding-right: 0;
-}
-
-ul.nice-menu-down li li.menuparent {
-    background: none;
-    padding-right: 0;
-}
-
-ul.nice-menu-down li li.menuparent:hover,
-ul.nice-menu-down li li.over,
-ul.nice-menu-down li ul li a:hover {
-    background: #968668;
-    padding-right: 0;
+    .menuparent a {
+        background: none;
+    }
 }
