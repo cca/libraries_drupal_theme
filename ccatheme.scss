@@ -181,12 +181,11 @@ dt {
   font-size: 12px;
 }
 
+// fix the truly terrible base theme decision
+// to have a fixed line height unrelated to font size
+// rely on Bootstrap styles of blockquotes otherwise
 blockquote {
-  font-size: .9em;
-  text-align: justify;
-  border-left: 1px solid #999;
-  margin: 0 0 5px 65px;
-  padding: 0 120px 0 5px;
+  line-height: normal;
 }
 
 .text {
